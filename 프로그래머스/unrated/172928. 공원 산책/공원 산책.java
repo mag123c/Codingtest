@@ -56,7 +56,6 @@ class Solution {
         		}      		
         	}
         	if(now != 'X' && now != 0) {
-            	parking[nowY][nowX] = 'S';
             	startX = nowX;
             	startY = nowY;
         	}        	
