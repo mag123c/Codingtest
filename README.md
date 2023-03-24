@@ -2,7 +2,7 @@
 
 ### 개인 블로그 https://mag1c.tistory.com/category/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8
 
-23.03.23 생성 및 기존 해결 완료 문제 추가
+### 23.03.23 생성 및 기존 해결 완료 문제 추가
 
 Lv1 - 16문제
 
