@@ -13,7 +13,6 @@ class Solution {
         
         for(int i=row_begin-1; i<row_end; i++) {
         	int sum = 0;
-        	String str = "";
         	for(int j=0; j<data[0].length; j++) {
         		sum += data[i][j]%(i+1);        		
         	}
