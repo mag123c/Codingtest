@@ -52,6 +52,7 @@
 <summary><h3>23.04</h3></summary>
 
     Lv1
+    달리기 경주
 
 <br>
 
