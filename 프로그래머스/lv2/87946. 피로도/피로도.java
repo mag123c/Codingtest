@@ -10,10 +10,6 @@ class Solution {
     }
     
     public void dfs(int[][] dungeons, boolean[] bl, int sum, int k, int join2, int idx){
-    	if(idx==dungeons.length || sum > k) {
-    		join = Math.max(join, join2);
-    		return; 
-    	}    	
     	
     	for(int i=0; i<dungeons.length; i++) {
     		if(bl[i]) continue;
