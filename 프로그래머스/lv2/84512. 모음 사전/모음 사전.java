@@ -1,16 +1,18 @@
 class Solution {
 	
 	static int idx = 0;
-	static int answer = 0;
+	static int answer = -1;
 	
     public int solution(String word) {   	
-        dfs(word, "");
-        System.out.println(answer);
+        dfs(word, "");        
         return answer;
     }
     
     public void dfs(String word, String text) {
-    	if(word.equals(text)) answer=idx;
+    	if(answer > 0) return;
+    	if(word.equals(text)) {
+    		answer=idx;
+    	}
     	idx++;
     	if(text.length()==5) {    		
     		return;
@@ -22,4 +24,5 @@ class Solution {
     	dfs(word, text+"O");
     	dfs(word, text+"U");
     }
+
 }
