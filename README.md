@@ -76,5 +76,6 @@
 <br>
 
     Lv3
+    N으로 표현(Dynamic Programing)
     
 </details>
