@@ -25,8 +25,6 @@
 
 </details>
 
-<hr>
-
 <details>
 <summary><h3>23.03</h3></summary>
 
@@ -45,8 +43,6 @@
 
 
 </details>
-
-<hr>
 
 <details>
 <summary><h3>23.04</h3></summary>
