@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class Main {
 
     static List<Integer> stack = new ArrayList<>();
-
+    static StringBuffer sb = new StringBuffer();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -30,34 +30,33 @@ public class Main {
                     break;
                 case "top" : top();
                     break;
-
             }
-
         }
+        System.out.println(sb.toString());
     }
     private static void push(int i) {
         stack.add(i);
     }
 
     private static void pop() {
-        if(stack.isEmpty()) System.out.println(-1);
+        if(stack.isEmpty()) sb.append(-1 + "\n");
         else{
-            System.out.println(stack.get(stack.size() - 1));
+            sb.append(stack.get(stack.size() - 1) + "\n");
             stack.remove(stack.size() - 1);
         }
     }
 
     private static void size() {
-        System.out.println(stack.size());
+        sb.append(stack.size() + "\n");
     }
 
     private static void empty() {
-        if(stack.isEmpty()) System.out.println(1);
-        else System.out.println(0);
+        if(stack.isEmpty()) sb.append(1 + "\n");
+        else sb.append(0 + "\n");
     }
     private static void top() {
-        if(stack.isEmpty()) System.out.println(-1);
-        else System.out.println(stack.get(stack.size() - 1));
+        if(stack.isEmpty()) sb.append(-1 + "\n");
+        else sb.append(stack.get(stack.size() - 1) + "\n");
     }
 
 }
