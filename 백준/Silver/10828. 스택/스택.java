@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringTokenizer;
 
 public class Main {
 
@@ -11,17 +12,15 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st;
 
         int N = Integer.parseInt(br.readLine());
-        StringBuffer sb = new StringBuffer();
 
         for(int i = 0; i < N; i++){
-            String command = br.readLine();
-            sb.setLength(0);
-            sb.append(command.split(" ")[0]);
+            st = new StringTokenizer(br.readLine(), " ");
 
-            switch(sb.toString()){
-                case "push": push(Integer.parseInt(command.split(" ")[1]));
+            switch(st.nextToken()){
+                case "push": push(Integer.parseInt(st.nextToken()));
                     break;
                 case "pop" : pop();
                     break;
