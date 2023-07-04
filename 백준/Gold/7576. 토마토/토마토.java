@@ -16,7 +16,6 @@ public class Main {
         int N = Integer.parseInt(st.nextToken());
 
         int[][] tomato = new int[N][M];
-        boolean[][] bl = new boolean[N][M];
         Queue<int []> queue = new LinkedList<>();
         for(int i = 0; i < N; i++) {
             st = new StringTokenizer(br.readLine(), " ");
@@ -49,7 +48,7 @@ public class Main {
                     int yy = y + tmp1[j];
                     int xx = x + tmp2[j];
 
-                    if (xx >= 0 && xx < M && yy >= 0 && yy < N && !bl[yy][xx] && tomato[yy][xx] == 0) {
+                    if (xx >= 0 && xx < M && yy >= 0 && yy < N && tomato[yy][xx] == 0) {
                         queue.add(new int[]{yy, xx});
                         tomato[yy][xx] = 1;
                         cnt++;
