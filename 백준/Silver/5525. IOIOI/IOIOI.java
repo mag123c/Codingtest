@@ -12,29 +12,20 @@ public class Main {
         int M = Integer.parseInt(br.readLine());
 
         String S = br.readLine();
-        String[] SArr = S.split("");
-        int length = S.length();
 
-        int IOI = (N * 2) + 1;
-        StringBuffer IOIsb = new StringBuffer();
-        StringBuffer sb = new StringBuffer();
-
-        for(int i = 0; i < IOI; i ++) {
-            if(i % 2 == 0) IOIsb.append("I");
-            else IOIsb.append("O");
-        }
-
+        int IOI = 0;
         int cnt = 0;
+        for(int i = 1; i < M - 1; i ++) {
+            if(S.charAt(i - 1) == 'I' && S.charAt(i) == 'O' && S.charAt(i + 1) == 'I') {
+                IOI++;
 
-        for(int i = 0; i <= length - IOI; i ++) {
-            if(SArr[i].equals("O")) continue;
-
-            for(int j = i; j < IOI + i; j ++) {
-                sb.append(SArr[j]);
+                if (IOI == N) {
+                    IOI--;
+                    cnt++;
+                }
+                i++;
             }
-
-            if(sb.toString().equals(IOIsb.toString())) cnt++;
-            sb.setLength(0);
+            else IOI = 0;
         }
         System.out.println(cnt);
     }
