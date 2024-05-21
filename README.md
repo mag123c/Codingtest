@@ -6,4 +6,4 @@
 
 
 ### 2024.05.21<br>
-- [Bronze V] Title: A+B - 3
+- [Gold IV] Title: N-Queen
