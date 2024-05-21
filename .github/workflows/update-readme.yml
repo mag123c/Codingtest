@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
       uses: actions/setup-node@v4
@@ -22,11 +22,11 @@ jobs:
       run: node update-readme.js
 
     - name: Commit and push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.CODINGTEST_WORKFLOW_TOKEN }}
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add README.md
         git commit -m "Update README.md"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.CODINGTEST_WORKFLOW_TOKEN }}
+        git push https://x-access-token:${{ secrets.CODINGTEST_WORKFLOW_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
