@@ -4,4 +4,5 @@
 
 
 ### 2024.05.21<br>
+- [Gold IV] Title: 스도쿠<br>
 - [Gold IV] Title: N-Queen
