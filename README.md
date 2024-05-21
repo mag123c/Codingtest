@@ -5,4 +5,5 @@
 프로그래머스, 백준 커밋 감지 시 README에 푼 문제 자동 업데이트
 
 ### 2024.05.21<br>
+- Update README.md<br>
 - Update update-readme.yml
