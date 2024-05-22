@@ -50,7 +50,7 @@ const updateReadme = () => {
     if (content.match(dateSectionRegex)) {
         content = content.replace(dateSectionRegex, match => `${match}<br>\n${newEntries}`);
     } else {
-        content = `### ${today}<br>\n${newEntries}\n` + content;
+        content += `\n### ${today}<br>\n${newEntries}\n`;
     }
 
     fs.writeFileSync(readmePath, content);
