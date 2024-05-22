@@ -17,23 +17,15 @@ const getChangedFiles = () => {
     return output.split('\n');
 };
 
-// Extract the problem link from the README file (any URL)
-const extractProblemLink = (readmeContent) => {
-    const problemLinkRegex = /\[문제 링크\]\((https?:\/\/[^\s)]+)\)/;
-    const match = readmeContent.match(problemLinkRegex);
-    console.log('Problem link match:', match); // 디버그 메시지 추가
-    return match ? match[1] : null;
-};
-
 // Update the README file
-const updateReadme = (commitMessage, problemLink, readmeFilePath) => {
+const updateReadme = (commitMessage, readmeFilePath) => {
     let content = '';
 
     if (fs.existsSync(readmeFilePath)) {
         content = fs.readFileSync(readmeFilePath, 'utf8');
     }
 
-    const newEntry = `- [${commitMessage}](${problemLink})\n`;
+    const newEntry = `- ${commitMessage}\n`;
     const dateSectionRegex = new RegExp(`(### ${today}(<br>)?\n)`, 'g');
 
     if (content.match(dateSectionRegex)) {
@@ -51,13 +43,6 @@ const changedFiles = getChangedFiles();
 
 changedFiles.forEach(filePath => {
     if (filePath.endsWith('README.md')) {
-        const readmeContent = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf8') : '';
-        const problemLink = extractProblemLink(readmeContent);
-
-        if (problemLink) {
-            updateReadme(commitMessage, problemLink, filePath);
-        } else {
-            console.error(`Problem link not found in ${filePath}`);
-        }
+        updateReadme(commitMessage, filePath);
     }
 });
