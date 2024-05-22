@@ -43,7 +43,7 @@ const updateReadme = (commitMessage, problemLink, readmeFilePath) => {
     }
 
     fs.writeFileSync(readmeFilePath, content);
-    console.log('README updated:', readmeFilePath);
+    console.log('README updated:', readmeFilePath); // 디버그 메시지 추가
 };
 
 const commitMessage = getCommitMessage();
