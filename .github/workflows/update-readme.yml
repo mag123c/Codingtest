@@ -5,10 +5,8 @@ on:
   pull_request:
     branches: [ "main" ]
 
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -25,8 +23,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.CODINGTEST_WORKFLOW_TOKEN }}
       run: |
-       git config --global user.name 'GitHub Action'
-       git config --global user.email 'action@github.com'
-       git add README.md
-       git commit -m "Update README.md [skip ci]" || echo "Nothing to commit"
-       git push origin HEAD:main || echo "Nothing to push"
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add README.md
+        git commit -m "Update README.md [skip ci]" || echo "Nothing to commit"
+        git push origin HEAD:main || echo "Nothing to push"
