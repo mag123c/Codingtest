@@ -8,6 +8,7 @@ const readmePath = 'README.md';
 // Get the latest commit message without the " -BaekjoonHub" part
 const getCommitMessage = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
+    console.log('Commit message:', output);  // 디버깅 출력
     return output.replace(' -BaekjoonHub', '');
 };
 
@@ -15,6 +16,7 @@ const getCommitMessage = () => {
 const extractProblemLink = (readmeContent) => {
     const problemLinkRegex = /\[문제 링크\]\((https?:\/\/[^\s)]+)\)/;
     const match = readmeContent.match(problemLinkRegex);
+    console.log('Problem link:', match ? match[1] : 'Not found');  // 디버깅 출력
     return match ? match[1] : null;
 };
 
@@ -35,6 +37,7 @@ const updateReadme = (commitMessage, problemLink) => {
         content = newEntry + content;
     }
 
+    console.log('Updated README content:', content);  // 디버깅 출력
     fs.writeFileSync(readmePath, content);
 };
 
