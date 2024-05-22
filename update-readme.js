@@ -1,16 +1,7 @@
 const fs = require('fs');
 const execSync = require('child_process').execSync;
 
-// 오늘 날짜를 "YYYY.MM.DD" 형식으로 반환
-const getToday = () => {
-    const date = new Date();
-    const yyyy = date.getFullYear();
-    const mm = String(date.getMonth() + 1).padStart(2, '0');
-    const dd = String(date.getDate()).padStart(2, '0');
-    return `${yyyy}.${mm}.${dd}`;
-};
-
-const today = getToday();
+const today = new Date().toISOString().slice(0, 10).replace(/-/g, '.');
 
 const readmePath = 'README.md';
 
@@ -26,6 +17,23 @@ const getChangedFiles = () => {
     return output.split('\n').filter(file => file !== readmePath);
 };
 
+// 변경된 파일 경로를 바탕으로 문제 정보 추출하기
+const extractProblemInfo = (filePath) => {
+    const parts = filePath.split('/');
+    const title = parts[parts.length - 1].replace('.md', '');
+    const site = parts[0];
+    const problemNumber = parts[1];
+    let siteUrl;
+
+    if (site === '백준') {
+        siteUrl = `https://www.acmicpc.net/problem/${problemNumber}`;
+    } else if (site === '프로그래머스') {
+        siteUrl = `https://programmers.co.kr/learn/courses/30/lessons/${problemNumber}`;
+    }
+
+    return `- [${title}](${siteUrl})`;
+};
+
 const commitMessage = getCommitMessage();
 const changedFiles = getChangedFiles();
 
@@ -36,16 +44,13 @@ const updateReadme = () => {
         content = fs.readFileSync(readmePath, 'utf8');
     }
 
-    // 오늘 날짜 섹션이 이미 있는지 확인
     const dateSectionRegex = new RegExp(`### ${today}`, 'g');
-    const newEntry = changedFiles.map(file => `| ${file} | [링크](/${file}) |`).join('<br>\n- ');
+    const newEntries = changedFiles.map(extractProblemInfo).join('<br>\n');
 
     if (content.match(dateSectionRegex)) {
-        // 이미 존재하는 날짜 섹션에 추가
-        content = content.replace(dateSectionRegex, match => `${match}<br>\n- ${newEntry}`);
+        content = content.replace(dateSectionRegex, match => `${match}<br>\n${newEntries}`);
     } else {
-        // 날짜 섹션이 없으면 새로 추가
-        content = `### ${today}<br>\n- ${newEntry}\n` + content;
+        content = `### ${today}<br>\n${newEntries}\n` + content;
     }
 
     fs.writeFileSync(readmePath, content);
