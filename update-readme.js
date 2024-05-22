@@ -20,9 +20,10 @@ const getChangedFiles = () => {
 // 변경된 파일 경로를 바탕으로 문제 정보 추출하기
 const extractProblemInfo = (filePath) => {
     const parts = filePath.split('/');
-    const title = parts[parts.length - 1].replace('.md', '');
-    const site = parts[0];
-    const problemNumber = parts[1];
+    const titleWithExtension = parts.pop();
+    const title = titleWithExtension.replace('.md', '');
+    const site = parts.shift();
+    const problemNumber = parts.join('/');
     let siteUrl;
 
     if (site === '백준') {
@@ -31,7 +32,7 @@ const extractProblemInfo = (filePath) => {
         siteUrl = `https://programmers.co.kr/learn/courses/30/lessons/${problemNumber}`;
     }
 
-    return `- [${title}](${siteUrl})`;
+    return `- [[${title}]](${siteUrl})`;
 };
 
 const commitMessage = getCommitMessage();
