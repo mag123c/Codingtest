@@ -35,7 +35,6 @@ const updateReadme = (commitMessage, problemLink, readmeFilePath) => {
         content = `### ${today}<br>\n${newEntry}\n` + content;
     }
 
-    console.log('Updated README content:', content);  // 디버깅 출력
     fs.writeFileSync(readmeFilePath, content);
 };
 
