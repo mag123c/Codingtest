@@ -5,10 +5,10 @@ const today = new Date().toISOString().slice(0, 10).replace(/-/g, '.');
 
 const readmePath = 'README.md';
 
-// Get the latest commit message
+// Get the latest commit message without the " -BaekjoonHub" part
 const getCommitMessage = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
-    return output;
+    return output.replace(' -BaekjoonHub', '');
 };
 
 // Extract the problem link from the README file (any URL)
@@ -26,11 +26,13 @@ const updateReadme = (commitMessage, problemLink) => {
         content = fs.readFileSync(readmePath, 'utf8');
     }
 
+    const newEntry = `### ${today}<br>\n- [${commitMessage}](${problemLink})\n`;
+
     const dateSectionRegex = new RegExp(`### ${today}`, 'g');
     if (content.match(dateSectionRegex)) {
         content = content.replace(dateSectionRegex, match => `${match}<br>\n- [${commitMessage}](${problemLink})`);
     } else {
-        content += `\n### ${today}<br>\n- [${commitMessage}](${problemLink})\n`;
+        content = newEntry + content;
     }
 
     fs.writeFileSync(readmePath, content);
