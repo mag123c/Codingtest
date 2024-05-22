@@ -5,15 +5,21 @@ const today = new Date().toISOString().slice(0, 10).replace(/-/g, '.');
 
 const readmePath = 'README.md';
 
-const getCommitMessages = () => {
+// Get the latest commit message
+const getCommitMessage = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
-    return output.split(',');
+    return output;
 };
 
-const commitMessages = getCommitMessages();
-const commitMessage = commitMessages[0];
+// Extract the problem link from the README file (any URL)
+const extractProblemLink = (readmeContent) => {
+    const problemLinkRegex = /\[문제 링크\]\((https?:\/\/[^\s)]+)\)/;
+    const match = readmeContent.match(problemLinkRegex);
+    return match ? match[1] : null;
+};
 
-const updateReadme = () => {
+// Update the README file
+const updateReadme = (commitMessage, problemLink) => {
     let content = '';
 
     if (fs.existsSync(readmePath)) {
@@ -22,12 +28,20 @@ const updateReadme = () => {
 
     const dateSectionRegex = new RegExp(`### ${today}`, 'g');
     if (content.match(dateSectionRegex)) {
-        content = content.replace(dateSectionRegex, match => `${match}<br>\n- ${commitMessage}`);
+        content = content.replace(dateSectionRegex, match => `${match}<br>\n- [${commitMessage}](${problemLink})`);
     } else {
-        content += `\n### ${today}<br>\n- ${commitMessage}\n`;
+        content += `\n### ${today}<br>\n- [${commitMessage}](${problemLink})\n`;
     }
 
     fs.writeFileSync(readmePath, content);
 };
 
-updateReadme();
+const commitMessage = getCommitMessage();
+const readmeContent = fs.existsSync(readmePath) ? fs.readFileSync(readmePath, 'utf8') : '';
+const problemLink = extractProblemLink(readmeContent);
+
+if (problemLink) {
+    updateReadme(commitMessage, problemLink);
+} else {
+    console.error('Problem link not found in README.md');
+}
