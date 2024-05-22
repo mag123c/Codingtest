@@ -37,7 +37,7 @@ const getDifficultyIconPath = (level) => {
         'Ruby II': 29,
         'Ruby I': 30
     };
-    return `<div align="center" ><img src="https://github.com/mag123c/Codingtest/blob/main/${difficultyLevels[level] || 0}.svg" /></div>`
+    return `<div align="center" ><img src="https://github.com/mag123c/Codingtest/blob/main/icon/${difficultyLevels[level] || 0}.svg" /></div>`
 };
 
 const getCommitMessages = () => {
