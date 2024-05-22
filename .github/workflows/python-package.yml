@@ -1,0 +1,50 @@
+name: Update README
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: UTF-8 Encoding
+      run: |
+        git config --global core.quotepath False 
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 3
+    - run: git log 
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.9"
+    # 의존 패키지 설치
+    - name: Install dependencies 
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi # requirements.txt 설치
+    # README 업데이트 여부 확인
+    - name: Run update_readme.py
+      id: condition
+      working-directory: auto-readme # 실행할 폴더 정보
+      run: |
+        python update_readme.py >> $GITHUB_OUTPUT
+    # 변수 전달 됐는지 확인
+    - name: Echo condition Var
+      run: echo ${{steps.condition.outputs.DO_UPDATE}}
+    # 업데이트가 됐다면 commit 진행
+    - name: Commit changes
+      if: ${{steps.condition.outputs.DO_UPDATE == 'True'}}
+      run: |
+        git config --global user.name 'mag123c'
+        git config --global user.email 'diehreo@gmail.com'
+        git add -A
+        git commit -am "auto-update README.md"
+    # push
+    - name: Push changes
+      run: |
+        git push
