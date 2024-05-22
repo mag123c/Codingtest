@@ -37,7 +37,7 @@ const getDifficultyIconPath = (level) => {
         'Ruby II': 29,
         'Ruby I': 30
     };
-    return `icons/${difficultyLevels[level] || 0}.svg`;
+    return `<div align="center" ><img src="https://github.com/mag123c/Codingtest/blob/main/${difficultyLevels[level] || 0}.svg" /></div>`
 };
 
 const getCommitMessages = () => {
@@ -92,8 +92,8 @@ const updateReadme = () => {
     }
 
     const tableHeader = `
-| # | 날짜 | 문제 | 난이도 |
-|---|---|---|---|
+| #  | 날짜 | 문제 | 난이도 |
+|:---:|:---:|:---:|:---:|
 `;
 
     let tableContent = '';
@@ -109,7 +109,7 @@ const updateReadme = () => {
     }
 
     // 새로운 항목을 테이블에 추가합니다.
-    tableContent += `| ${index} | ${newEntry.date} | ${newEntry.title} | ![${newEntry.level}](${getDifficultyIconPath(newEntry.level)}) |\n`;
+    tableContent += `| ${index} | ${newEntry.date} | ${newEntry.title} | ${getDifficultyIconPath(newEntry.level)};
 
     // README 파일을 업데이트합니다.
     fs.writeFileSync(readmePath, `${tableHeader}${tableContent}`);
