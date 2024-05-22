@@ -1,9 +1,44 @@
 const fs = require('fs');
 const execSync = require('child_process').execSync;
 
-const today = new Date().toISOString().slice(0, 10).replace(/-/g, '.');
-
 const readmePath = 'README.md';
+
+// 문제 난이도에 해당하는 SVG 파일 경로를 반환하는 함수
+const getDifficultyIconPath = (level) => {
+    const difficultyLevels = {
+        'Bronze V': 1,
+        'Bronze IV': 2,
+        'Bronze III': 3,
+        'Bronze II': 4,
+        'Bronze I': 5,
+        'Silver V': 6,
+        'Silver IV': 7,
+        'Silver III': 8,
+        'Silver II': 9,
+        'Silver I': 10,
+        'Gold V': 11,
+        'Gold IV': 12,
+        'Gold III': 13,
+        'Gold II': 14,
+        'Gold I': 15,
+        'Platinum V': 16,
+        'Platinum IV': 17,
+        'Platinum III': 18,
+        'Platinum II': 19,
+        'Platinum I': 20,
+        'Diamond V': 21,
+        'Diamond IV': 22,
+        'Diamond III': 23,
+        'Diamond II': 24,
+        'Diamond I': 25,
+        'Ruby V': 26,
+        'Ruby IV': 27,
+        'Ruby III': 28,
+        'Ruby II': 29,
+        'Ruby I': 30
+    };
+    return `icons/${difficultyLevels[level] || 0}.svg`;
+};
 
 const getCommitMessages = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
@@ -23,50 +58,61 @@ const getCommitMessages = () => {
     const problemLevel = problemInfoMatch[1];
     const problemTitle = problemInfoMatch[2];
 
-    return `[${problemLevel}] ${problemTitle}`;
+    return { problemLevel, problemTitle };
 };
 
-const commitMessage = getCommitMessages();
+const { problemLevel, problemTitle } = getCommitMessages();
 
-// // 현재 커밋의 README.md 전체 내용을 읽어오는 함수
-// const getCurrentCommitReadmeContent = () => {
-//     try {
-//         // 현재 커밋에 추가된 README.md 파일의 경로를 가져옴
-//         const filePath = execSync('git diff-tree --no-commit-id --name-only -r HEAD | grep README.md').toString().trim();
-//         if (!filePath) {
-//             console.error('No README.md found in the current commit.');
-//             process.exit(1);
-//         }
-//         const output = execSync(`git show HEAD:${filePath}`).toString();
-//         return output;
-//     } catch (error) {
-//         console.error('Failed to read README.md from the current commit.');
-//         process.exit(1);
-//     }
-// };
+// 현재 커밋에 포함된 파일 경로와 파일명을 로그에 출력하는 함수
+const logUploadedFiles = () => {
+    try {
+        const output = execSync('git diff-tree --no-commit-id --name-only -r HEAD').toString().trim();
+        const files = output.split('\n');
+        console.log('Uploaded files:');
+        files.forEach(file => console.log(file));
+        return files;
+    } catch (error) {
+        console.error('Failed to get uploaded files from the current commit.');
+        process.exit(1);
+    }
+};
 
-// const newReadmeContent = getCurrentCommitReadmeContent();
+const uploadedFiles = logUploadedFiles();
 
 const updateReadme = () => {
     let content = '';
+    const newEntry = {
+        date: new Date().toISOString().slice(0, 10),
+        title: problemTitle,
+        level: problemLevel
+    };
 
     if (fs.existsSync(readmePath)) {
         content = fs.readFileSync(readmePath, 'utf8');
     }
 
-    const dateSectionRegex = new RegExp(`### ${today}`, 'g');
-    const newEntry = `- ${commitMessage}<br>`;
-    
-    if (content.match(dateSectionRegex)) {
-        content = content.replace(dateSectionRegex, match => `${match}<br>\n${newEntry}`);
-    } else {
-        content += `\n### ${today}<br>\n${newEntry}\n`;
+    const tableHeader = `
+| # | 날짜 | 문제 | 난이도 |
+|---|---|---|---|
+`;
+
+    let tableContent = '';
+    const existingEntries = content.split('\n').slice(2); // 기존의 테이블 내용을 가져옵니다.
+    let index = 1;
+
+    // 기존의 테이블 내용을 새로운 내용으로 업데이트합니다.
+    for (const entry of existingEntries) {
+        if (entry.trim()) {
+            tableContent += `${entry}\n`;
+            index++;
+        }
     }
 
-    // // 현재 커밋의 README.md 내용 추가
-    // content += `\n\n${newReadmeContent}\n`;
+    // 새로운 항목을 테이블에 추가합니다.
+    tableContent += `| ${index} | ${newEntry.date} | ${newEntry.title} | ![${newEntry.level}](${getDifficultyIconPath(newEntry.level)}) |\n`;
 
-    fs.writeFileSync(readmePath, content);
+    // README 파일을 업데이트합니다.
+    fs.writeFileSync(readmePath, `${tableHeader}${tableContent}`);
 };
 
 updateReadme();
