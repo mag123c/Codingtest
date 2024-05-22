@@ -108,10 +108,7 @@ const updateReadme = () => {
         }
     }
 
-    // 새로운 항목을 테이블에 추가합니다.
-    tableContent += `| ${index} | ${newEntry.date} | ${newEntry.title} | ${getDifficultyIconPath(newEntry.level)};
-
-    // README 파일을 업데이트합니다.
+    tableContent += `| ${index} | ${newEntry.date} | ${newEntry.title} | ${getDifficultyIconPath(newEntry.level)} |`;
     fs.writeFileSync(readmePath, `${tableHeader}${tableContent}`);
 };
 
