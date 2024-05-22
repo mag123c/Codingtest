@@ -1,4 +1,4 @@
-[풀이는 블로그에 포스팅되어 있습니다.](https://mag1c.tistory.com/category/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8)<br>
+풀이는 [블로그](https://mag1c.tistory.com/category/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8)에 포스팅되어 있습니다.<br>
 
 ### 2024.05.21<br>
 - [[Gold IV] Title: 스도쿠](https://www.acmicpc.net/problem/2580)<br>
