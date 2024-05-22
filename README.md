@@ -10,6 +10,7 @@
 - [[Gold IV] Title: N-Queen](https://www.acmicpc.net/problem/9663)
 
 ### 2024.05.22<br>
+- 그대로 출력하기<br>
 - Update README.md<br>
 - Update README.md<br>
 - Update README.md<br>
