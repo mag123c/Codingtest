@@ -3,12 +3,14 @@ const execSync = require('child_process').execSync;
 
 const today = new Date().toISOString().slice(0, 10).replace(/-/g, '.');
 
-const readmePath = 'README.md';
-
 const getCommitMessage = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
-    console.log('Commit message:', output);  // 디버깅 출력
     return output.replace(' -BaekjoonHub', '');
+};
+
+const getChangedFiles = () => {
+    const output = execSync('git diff-tree --no-commit-id --name-only -r HEAD').toString().trim();
+    return output.split('\n');
 };
 
 const extractProblemLink = (readmeContent) => {
@@ -17,36 +19,38 @@ const extractProblemLink = (readmeContent) => {
     return match ? match[1] : null;
 };
 
-const updateReadme = (commitMessage, problemLink) => {
+const updateReadme = (commitMessage, problemLink, readmeFilePath) => {
     let content = '';
 
-    if (fs.existsSync(readmePath)) {
-        content = fs.readFileSync(readmePath, 'utf8');
+    if (fs.existsSync(readmeFilePath)) {
+        content = fs.readFileSync(readmeFilePath, 'utf8');
     }
 
-    const newEntry = `### ${today}<br>\n- [${commitMessage}](${problemLink})\n`;
+    const newEntry = `- [${commitMessage}](${problemLink})\n`;
+    const dateSectionRegex = new RegExp(`(### ${today}(<br>)?\n)`, 'g');
 
-    const dateSectionRegex = new RegExp(`### ${today}`, 'g');
     if (content.match(dateSectionRegex)) {
-        content = content.replace(dateSectionRegex, match => `${match}<br>\n- [${commitMessage}](${problemLink})`);
+        content = content.replace(dateSectionRegex, `$1${newEntry}`);
     } else {
-        content = newEntry + content;
+        content = `### ${today}<br>\n${newEntry}\n` + content;
     }
 
-    fs.writeFileSync(readmePath, content);
+    console.log('Updated README content:', content);  // 디버깅 출력
+    fs.writeFileSync(readmeFilePath, content);
 };
 
 const commitMessage = getCommitMessage();
+const changedFiles = getChangedFiles();
 
-const readmeFiles = execSync('find . -name "README.md"').toString().trim().split('\n');
+changedFiles.forEach(filePath => {
+    if (filePath.endsWith('README.md')) {
+        const readmeContent = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf8') : '';
+        const problemLink = extractProblemLink(readmeContent);
 
-readmeFiles.forEach(readmeFilePath => {
-    const readmeContent = fs.existsSync(readmeFilePath) ? fs.readFileSync(readmeFilePath, 'utf8') : '';
-    const problemLink = extractProblemLink(readmeContent);
-
-    if (problemLink) {
-        updateReadme(commitMessage, problemLink);
-    } else {
-        console.error(`Problem link not found in ${readmeFilePath}`);
+        if (problemLink) {
+            updateReadme(commitMessage, problemLink, filePath);
+        } else {
+            console.error(`Problem link not found in ${filePath}`);
+        }
     }
 });
