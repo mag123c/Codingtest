@@ -7,19 +7,39 @@ const readmePath = 'README.md';
 
 const getCommitMessages = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
-    return output;
+    
+    if (!output.includes('-BaekjoonHub')) {
+        console.error('This commit is not from BaekjoonHub.');
+        process.exit(1);
+    }
+
+    const problemInfoMatch = output.match(/\[(.*?)\] Title: (.*?), Time:/);
+    
+    if (!problemInfoMatch) {
+        console.error('Commit message format is incorrect.');
+        process.exit(1);
+    }
+    
+    const problemLevel = problemInfoMatch[1];
+    const problemTitle = problemInfoMatch[2];
+
+    return `[${problemLevel}] ${problemTitle}`;
 };
 
 const commitMessage = getCommitMessages();
-if (!commitMessage.includes('-BaekjoonHub')) {
-    console.error('Not a BaekjoonHub commit message. Exiting.');
-    process.exit(1);
-}
 
-const formattedMessage = commitMessage
-    .replace('-BaekjoonHub', '')
-    .replace(/\[.*?\] Title: /, '')
-    .split(',')[0];
+// 현재 커밋의 README.md 전체 내용을 읽어오는 함수
+const getCurrentCommitReadmeContent = () => {
+    try {
+        const output = execSync('git show HEAD:README.md').toString();
+        return output;
+    } catch (error) {
+        console.error('Failed to read README.md from the current commit.');
+        process.exit(1);
+    }
+};
+
+const newReadmeContent = getCurrentCommitReadmeContent();
 
 const updateReadme = () => {
     let content = '';
@@ -29,11 +49,16 @@ const updateReadme = () => {
     }
 
     const dateSectionRegex = new RegExp(`### ${today}`, 'g');
+    const newEntry = `- ${commitMessage}<br>`;
+    
     if (content.match(dateSectionRegex)) {
-        content = content.replace(dateSectionRegex, match => `${match}<br>\n- ${formattedMessage}`);
+        content = content.replace(dateSectionRegex, match => `${match}<br>\n${newEntry}`);
     } else {
-        content += `\n### ${today}<br>\n- ${formattedMessage}\n`;
+        content += `\n### ${today}<br>\n${newEntry}\n`;
     }
+
+    // 현재 커밋의 README.md 내용 추가
+    content += `\n\n${newReadmeContent}\n`;
 
     fs.writeFileSync(readmePath, content);
 };
