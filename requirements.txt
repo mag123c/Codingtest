@@ -1,0 +1,4 @@
+aiohttp==3.8.4
+beautifulsoup4==4.11.2
+GitPython==3.1.31
+requests==2.28.2
