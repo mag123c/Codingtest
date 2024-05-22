@@ -10,6 +10,7 @@
 - [[Gold IV] Title: N-Queen](https://www.acmicpc.net/problem/9663)
 
 ### 2024.05.22<br>
+- |  | [링크](/) |<br>
 - U<br>
 - Update update-readme.yml<br>
 - [[Silver III] Title: 01타일](https://www.acmicpc.net/problem/1904)<br>
