@@ -32,4 +32,4 @@ jobs:
         git pull origin main
         git add README.md
         git commit -m "Update README.md [skip ci]"
-        git push origin HEAD:main
+        git push origin main
