@@ -28,8 +28,7 @@ jobs:
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "GitHub Action"
-        git remote set-url origin https://${{ secrets.CODINGTEST_WORKFLOW_TOKEN }}@github.com/${{ github.repository }}
-        git pull origin main
+        git remote set-url origin https://x-access-token:${{ secrets.CODINGTEST_WORKFLOW_TOKEN }}@github.com/${{ github.repository }}.git
         git add README.md
         git commit -m "Update README.md [skip ci]"
-        git push origin main
+        git push origin HEAD:main
