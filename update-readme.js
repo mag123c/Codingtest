@@ -7,33 +7,11 @@ const readmePath = 'README.md';
 
 const getCommitMessages = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
-    return output;
+    return output.split(',');
 };
 
-const getProblemLinkFromReadme = () => {
-    const output = execSync('git show HEAD:README.md').toString();
-    const match = output.match(/\[문제 링크\]\((https:\/\/www\.acmicpc\.net\/problem\/\d+)\)/);
-    return match ? match[1] : null;
-};
-
-const commitMessage = getCommitMessages();
-const problemMatch = commitMessage.match(/\[(.*?)\] Title: (.*?), Time:/);
-
-if (!problemMatch) {
-    console.error('Commit message format is incorrect.');
-    process.exit(1);
-}
-
-const problemLevel = problemMatch[1];
-const problemTitle = problemMatch[2];
-const problemLink = getProblemLinkFromReadme();
-
-if (!problemLink) {
-    console.error('Problem link not found in the README.md.');
-    process.exit(1);
-}
-
-const formattedCommitMessage = `[${problemLevel}] ${problemTitle} (${problemLink})`;
+const commitMessages = getCommitMessages();
+const commitMessage = commitMessages[0];
 
 const updateReadme = () => {
     let content = '';
@@ -43,12 +21,10 @@ const updateReadme = () => {
     }
 
     const dateSectionRegex = new RegExp(`### ${today}`, 'g');
-    const newEntry = `- ${formattedCommitMessage}<br>`;
-    
     if (content.match(dateSectionRegex)) {
-        content = content.replace(dateSectionRegex, match => `${match}<br>\n${newEntry}`);
+        content = content.replace(dateSectionRegex, match => `${match}<br>\n- ${commitMessage}`);
     } else {
-        content += `\n### ${today}<br>\n${newEntry}\n`;
+        content += `\n### ${today}<br>\n- ${commitMessage}\n`;
     }
 
     fs.writeFileSync(readmePath, content);
