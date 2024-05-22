@@ -1,48 +1,45 @@
 const fs = require('fs');
+const path = require('path');
 const execSync = require('child_process').execSync;
 
-const today = new Date().toISOString().slice(0, 10).replace(/-/g, '.');
+const readmePath = 'README.md';
 
-// Get the latest commit message without the " -BaekjoonHub" part
-const getCommitMessage = () => {
+// 오늘 날짜를 "YYYY.MM.DD" 형식으로 반환
+const getToday = () => {
+    const date = new Date();
+    const yyyy = date.getFullYear();
+    const mm = String(date.getMonth() + 1).padStart(2, '0');
+    const dd = String(date.getDate()).padStart(2, '0');
+    return `${yyyy}.${mm}.${dd}`;
+};
+
+const today = getToday();
+
+const getCommitMessages = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
-    console.log('Commit message:', output); // 디버그 메시지 추가
     return output.replace(' -BaekjoonHub', '');
 };
 
-// Get the list of files changed in the latest commit
-const getChangedFiles = () => {
-    const output = execSync('git diff-tree --no-commit-id --name-only -r HEAD').toString().trim();
-    console.log('Changed files:', output); // 디버그 메시지 추가
-    return output.split('\n');
-};
+const commitMessages = getCommitMessages();
 
-// Update the README file
-const updateReadme = (commitMessage, readmeFilePath) => {
+const updateReadme = () => {
     let content = '';
 
-    if (fs.existsSync(readmeFilePath)) {
-        content = fs.readFileSync(readmeFilePath, 'utf8');
+    if (fs.existsSync(readmePath)) {
+        content = fs.readFileSync(readmePath, 'utf-8');
     }
 
-    const newEntry = `- ${commitMessage}\n`;
-    const dateSectionRegex = new RegExp(`(### ${today}(<br>)?\n)`, 'g');
-
+    // 오늘 날짜 섹션이 이미 있는지 확인
+    const dateSectionRegex = new RegExp(`### ${today}`, 'g');
     if (content.match(dateSectionRegex)) {
-        content = content.replace(dateSectionRegex, `$1${newEntry}`);
+        // 이미 존재하는 날짜 섹션에 추가
+        content = content.replace(dateSectionRegex, match => `${match}<br>\n- ${commitMessages}`);
     } else {
-        content = `### ${today}<br>\n${newEntry}\n` + content;
+        // 날짜 섹션이 없으면 새로 추가
+        content = `### ${today}<br>\n- ${commitMessages}\n` + content;
     }
 
-    fs.writeFileSync(readmeFilePath, content);
-    console.log('README updated:', readmeFilePath); // 디버그 메시지 추가
+    fs.writeFileSync(readmePath, content);
 };
 
-const commitMessage = getCommitMessage();
-const changedFiles = getChangedFiles();
-
-changedFiles.forEach(filePath => {
-    if (filePath.endsWith('README.md')) {
-        updateReadme(commitMessage, filePath);
-    }
-});
+updateReadme();
