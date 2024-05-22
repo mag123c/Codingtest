@@ -6,12 +6,14 @@ const today = new Date().toISOString().slice(0, 10).replace(/-/g, '.');
 // Get the latest commit message without the " -BaekjoonHub" part
 const getCommitMessage = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
+    console.log('Commit message:', output); // 디버그 메시지 추가
     return output.replace(' -BaekjoonHub', '');
 };
 
 // Get the list of files changed in the latest commit
 const getChangedFiles = () => {
     const output = execSync('git diff-tree --no-commit-id --name-only -r HEAD').toString().trim();
+    console.log('Changed files:', output); // 디버그 메시지 추가
     return output.split('\n');
 };
 
@@ -19,6 +21,7 @@ const getChangedFiles = () => {
 const extractProblemLink = (readmeContent) => {
     const problemLinkRegex = /\[문제 링크\]\((https?:\/\/[^\s)]+)\)/;
     const match = readmeContent.match(problemLinkRegex);
+    console.log('Problem link match:', match); // 디버그 메시지 추가
     return match ? match[1] : null;
 };
 
@@ -40,6 +43,7 @@ const updateReadme = (commitMessage, problemLink, readmeFilePath) => {
     }
 
     fs.writeFileSync(readmeFilePath, content);
+    console.log('README updated:', readmeFilePath); // 디버그 메시지 추가
 };
 
 const commitMessage = getCommitMessage();
