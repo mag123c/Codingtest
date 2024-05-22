@@ -7,14 +7,11 @@ const readmePath = 'README.md';
 
 const getCommitMessages = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
-    const lines = output.split('\n');
-    const titleLine = lines[0]; // 첫 번째 줄이 제목
-    const linkLine = lines[1]; // 두 번째 줄이 링크
-    return { titleLine, linkLine };
+    return output.split(',');
 };
 
 const commitMessages = getCommitMessages();
-const commitMessage = `[[${commitMessages.titleLine}](${commitMessages.linkLine})]`;
+const commitMessage = commitMessages[0];
 
 const updateReadme = () => {
     let content = '';
