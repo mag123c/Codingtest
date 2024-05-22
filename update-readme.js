@@ -10,8 +10,16 @@ const getCommitMessages = () => {
     return output;
 };
 
-const commitMessages = getCommitMessages();
-const commitMessage = commitMessages.split('\n')[0];
+const commitMessage = getCommitMessages();
+const problemMatch = commitMessage.match(/\[(.*?)\] Title: (.*?), Time:/);
+
+if (!problemMatch) {
+    console.error('Commit message format is incorrect.');
+    process.exit(1);
+}
+
+const problemLevel = problemMatch[1];
+const problemTitle = problemMatch[2];
 
 // 현재 커밋에 포함된 파일에서 문제 링크 추출
 const getProblemLinkFromCommit = () => {
@@ -22,9 +30,12 @@ const getProblemLinkFromCommit = () => {
 
 const problemLink = getProblemLinkFromCommit();
 
-// 문제 제목 추출 (커밋 메시지의 첫 줄 사용)
-const problemTitle = commitMessage.match(/Title: (.*?),/)[1];
-const formattedCommitMessage = `[${problemTitle}](${problemLink})`;
+if (!problemLink) {
+    console.error('Problem link not found in the README.md.');
+    process.exit(1);
+}
+
+const formattedCommitMessage = `[${problemLevel}] ${problemTitle} (${problemLink})`;
 
 const updateReadme = () => {
     let content = '';
