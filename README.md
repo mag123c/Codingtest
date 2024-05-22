@@ -6,3 +6,6 @@
 ### 2024.05.21<br>
 - [Gold IV] Title: 스도쿠<br>
 - [Gold IV] Title: N-Queen
+
+### 2024.05.22<br>
+- [Bronze I] Title: 알고리즘 수업 - 피보나치 수 1
