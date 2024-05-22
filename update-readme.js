@@ -10,7 +10,7 @@ const getCommitMessages = () => {
     return output;
 };
 
-const getProblemLinkFromCommit = () => {
+const getProblemLinkFromReadme = () => {
     const output = execSync('git show HEAD:README.md').toString();
     const match = output.match(/\[문제 링크\]\((https:\/\/www\.acmicpc\.net\/problem\/\d+)\)/);
     return match ? match[1] : null;
@@ -25,8 +25,8 @@ if (!problemMatch) {
 }
 
 const problemLevel = problemMatch[1];
-const problemTitle = problemMatch[2].replace('Title: ', '').trim();
-const problemLink = getProblemLinkFromCommit();
+const problemTitle = problemMatch[2];
+const problemLink = getProblemLinkFromReadme();
 
 if (!problemLink) {
     console.error('Problem link not found in the README.md.');
@@ -44,7 +44,7 @@ const updateReadme = () => {
 
     const dateSectionRegex = new RegExp(`### ${today}`, 'g');
     const newEntry = `- ${formattedCommitMessage}<br>`;
-
+    
     if (content.match(dateSectionRegex)) {
         content = content.replace(dateSectionRegex, match => `${match}<br>\n${newEntry}`);
     } else {
