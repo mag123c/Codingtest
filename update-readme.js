@@ -7,11 +7,19 @@ const readmePath = 'README.md';
 
 const getCommitMessages = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
-    return output.split(',');
+    return output;
 };
 
-const commitMessages = getCommitMessages();
-const commitMessage = commitMessages[0];
+const commitMessage = getCommitMessages();
+if (!commitMessage.includes('-BaekjoonHub')) {
+    console.error('Not a BaekjoonHub commit message. Exiting.');
+    process.exit(1);
+}
+
+const formattedMessage = commitMessage
+    .replace('-BaekjoonHub', '')
+    .replace(/\[.*?\] Title: /, '')
+    .split(',')[0];
 
 const updateReadme = () => {
     let content = '';
@@ -22,9 +30,9 @@ const updateReadme = () => {
 
     const dateSectionRegex = new RegExp(`### ${today}`, 'g');
     if (content.match(dateSectionRegex)) {
-        content = content.replace(dateSectionRegex, match => `${match}<br>\n- ${commitMessage}`);
+        content = content.replace(dateSectionRegex, match => `${match}<br>\n- ${formattedMessage}`);
     } else {
-        content += `\n### ${today}<br>\n- ${commitMessage}\n`;
+        content += `\n### ${today}<br>\n- ${formattedMessage}\n`;
     }
 
     fs.writeFileSync(readmePath, content);
