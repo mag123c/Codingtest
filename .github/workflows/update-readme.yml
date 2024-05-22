@@ -24,7 +24,9 @@ jobs:
         node-version: '20'
 
     - name: Update README.md
-      run: node update-readme.js
+      run: |
+        node update-readme.js
+        git status
       continue-on-error: true
 
     - name: Commit and push changes
@@ -35,5 +37,5 @@ jobs:
         git config --global user.name "GitHub Action"
         git remote set-url origin https://x-access-token:${{ secrets.CODINGTEST_WORKFLOW_TOKEN }}@github.com/${{ github.repository }}.git
         git add README.md
-        git commit -m "Update README.md [skip ci]"
-        git push origin HEAD:main
+        git commit -m "Update README.md [skip ci]" || echo "Nothing to commit"
+        git push origin HEAD:main || echo "Nothing to push"
