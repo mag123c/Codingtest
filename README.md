@@ -13,3 +13,4 @@ Git Actions을 통한 백준허브 오토커밋 시 README 자동화
 | 3 | 2024.05.22 | [01타일](https://www.acmicpc.net/problem/1904) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 4 | 2024.05.22 | [신나는 함수 실행](https://www.acmicpc.net/problem/9184) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 | 5 | 2024.05.22 | [알고리즘 수업 - 피보나치 수 1](https://www.acmicpc.net/problem/24416) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
+| 6 | 2024-05-23 | 연속합 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
