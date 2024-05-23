@@ -1,9 +1,6 @@
 const fs = require('fs');
 const execSync = require('child_process').execSync;
-
 const readmePath = 'README.md';
-const linkFilePath = 'link.txt';
-
 // 문제 난이도에 해당하는 SVG 파일 경로를 반환하는 함수
 const getDifficultyIconPath = (level) => {
     const difficultyLevels = {
@@ -43,12 +40,10 @@ const getDifficultyIconPath = (level) => {
 
 const getCommitMessages = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
-
     if (!output.includes('-BaekjoonHub')) {
         console.error('This commit is not from BaekjoonHub.');
         process.exit(1);
     }
-
     const problemInfoMatch = output.match(/\[(.*?)\] Title: (.*?), Time:/);
     
     if (!problemInfoMatch) {
@@ -58,24 +53,9 @@ const getCommitMessages = () => {
     
     const problemLevel = problemInfoMatch[1];
     const problemTitle = problemInfoMatch[2];
-
     return { problemLevel, problemTitle };
 };
-
 const { problemLevel, problemTitle } = getCommitMessages();
-
-// link.txt 파일에서 문제 링크를 읽어오는 함수
-const getProblemLink = () => {
-    if (fs.existsSync(linkFilePath)) {
-        return fs.readFileSync(linkFilePath, 'utf8').trim();
-    } else {
-        console.error('link.txt not found.');
-        process.exit(1);
-    }
-};
-
-const problemLink = getProblemLink();
-
 // 현재 커밋에 포함된 파일 경로와 파일명을 로그에 출력하는 함수
 const logUploadedFiles = () => {
     try {
@@ -89,41 +69,38 @@ const logUploadedFiles = () => {
         process.exit(1);
     }
 };
-
 const uploadedFiles = logUploadedFiles();
-
 const updateReadme = () => {
     let content = '';
     const newEntry = {
         date: new Date().toISOString().slice(0, 10),
         title: problemTitle,
-        level: problemLevel,
-        link: problemLink
+        level: problemLevel
     };
-
     if (fs.existsSync(readmePath)) {
         content = fs.readFileSync(readmePath, 'utf8');
     }
-
     const tableHeader = `
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 `;
 
     let tableContent = '';
-    const existingEntries = content.split('\n').slice(2); // 기존의 테이블 내용을 가져옵니다.
+    const tableStartIndex = content.indexOf(tableHeader);
     let index = 1;
 
-    // 기존의 테이블 내용을 새로운 내용으로 업데이트합니다.
-    for (const entry of existingEntries) {
-        if (entry.trim()) {
-            tableContent += `${entry}\n`;
-            index++;
-        }
+    if (tableStartIndex !== -1) {
+        tableContent = content.slice(tableStartIndex + tableHeader.length).trim();
+        const existingEntries = tableContent.split('\n').filter(entry => entry.startsWith('|'));
+        index = existingEntries.length + 1;
+        tableContent = existingEntries.join('\n');
     }
 
-    tableContent += `| ${index} | ${newEntry.date} | [${newEntry.title}](${newEntry.link}) | ${getDifficultyIconPath(newEntry.level)} |`;
-    fs.writeFileSync(readmePath, `${tableHeader}${tableContent}`);
+    const newTableRow = `| ${index} | ${newEntry.date} | ${newEntry.title} | ${getDifficultyIconPath(newEntry.level)} |`;
+
+    const newContent = content.slice(0, tableStartIndex + tableHeader.length).trim() + `\n${tableContent}\n${newTableRow}\n`;
+
+    fs.writeFileSync(readmePath, newContent);
 };
 
 updateReadme();
