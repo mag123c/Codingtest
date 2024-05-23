@@ -26,11 +26,13 @@ jobs:
     - name: Read and log README.md contents if changed
       run: |
         if grep -q 'README.md' changed_files.txt; then
-          grep 'README.md' changed_files.txt | tr '\n' '\0' | xargs -0 -I {} sh -c 'echo "Contents of {}:"; cat "{}"'
+          grep 'README.md' changed_files.txt | while IFS= read -r file; do
+            echo "Contents of $file:"
+            cat "$file" || echo "Error reading $file"
+          done
         else
           echo "No README.md files changed."
         fi
-
         
     - name: Set up Node.js
       uses: actions/setup-node@v4
