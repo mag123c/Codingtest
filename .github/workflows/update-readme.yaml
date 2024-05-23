@@ -26,10 +26,12 @@ jobs:
     - name: Read and log README.md contents if changed
       run: |
         if grep -q 'README.md' changed_files.txt; then
-          grep 'README.md' changed_files.txt | while read -r file; do
-            echo "Contents of $file:"
-            cat "$file"
-          done
+          while IFS= read -r file; do
+            if [[ $file == *README.md ]]; then
+              echo "Contents of $file:"
+              cat "$file"
+            fi
+          done < changed_files.txt
         else
           echo "No README.md files changed."
         fi
