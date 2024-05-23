@@ -24,3 +24,4 @@ Git Actions을 통한 백준허브 오토커밋 시 README 자동화
 | 14 | 2024-05-23 | We love kriii | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
 | 15 | 2024-05-23 | 고려대는 사랑입니다 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
 | 16 | 2024-05-23 | 학점계산 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
+| 17 | 2024-05-23 | UCPC에서 가장 쉬운 문제 번호는? | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
