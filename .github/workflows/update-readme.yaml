@@ -26,8 +26,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.CODINGTEST_WORKFLOW_TOKEN }}
       run: |
-        git config --global user.email "action@github.com"
-        git config --global user.name "GitHub Action"
+        git config --global user.email "diehreo@gmail.com"
+        git config --global user.name "mag123c"
         git remote set-url origin https://x-access-token:${{ secrets.CODINGTEST_WORKFLOW_TOKEN }}@github.com/${{ github.repository }}.git
         git add README.md
         git commit -m "Update README.md [skip ci]"
