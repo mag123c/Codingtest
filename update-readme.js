@@ -1,6 +1,8 @@
 const fs = require('fs');
 const execSync = require('child_process').execSync;
+
 const readmePath = 'README.md';
+
 // 문제 난이도에 해당하는 SVG 파일 경로를 반환하는 함수
 const getDifficultyIconPath = (level) => {
     const difficultyLevels = {
@@ -55,7 +57,9 @@ const getCommitMessages = () => {
     const problemTitle = problemInfoMatch[2];
     return { problemLevel, problemTitle };
 };
+
 const { problemLevel, problemTitle } = getCommitMessages();
+
 // 현재 커밋에 포함된 파일 경로와 파일명을 로그에 출력하는 함수
 const logUploadedFiles = () => {
     try {
@@ -69,7 +73,9 @@ const logUploadedFiles = () => {
         process.exit(1);
     }
 };
+
 const uploadedFiles = logUploadedFiles();
+
 const updateReadme = () => {
     let content = '';
     const newEntry = {
@@ -103,4 +109,20 @@ const updateReadme = () => {
     fs.writeFileSync(readmePath, newContent);
 };
 
+// 변경된 README.md 파일의 내용을 로그에 출력하는 함수
+const logReadmeContents = () => {
+    uploadedFiles.forEach(file => {
+        if (file.endsWith('README.md')) {
+            console.log(`Contents of ${file}:`);
+            try {
+                const readmeContent = fs.readFileSync(file, 'utf8');
+                console.log(readmeContent);
+            } catch (error) {
+                console.error(`Error reading ${file}`);
+            }
+        }
+    });
+};
+
 updateReadme();
+logReadmeContents();
