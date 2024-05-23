@@ -1,8 +1,6 @@
 const fs = require('fs');
 const execSync = require('child_process').execSync;
-
 const readmePath = 'README.md';
-
 // 문제 난이도에 해당하는 SVG 파일 경로를 반환하는 함수
 const getDifficultyIconPath = (level) => {
     const difficultyLevels = {
@@ -42,39 +40,30 @@ const getDifficultyIconPath = (level) => {
 
 const getCommitMessages = () => {
     const output = execSync('git log -1 --pretty=%B').toString().trim();
-
     if (!output.includes('-BaekjoonHub')) {
         console.error('This commit is not from BaekjoonHub.');
         process.exit(1);
     }
-
     const problemInfoMatch = output.match(/\[(.*?)\] Title: (.*?), Time:/);
-    
+
     if (!problemInfoMatch) {
         console.error('Commit message format is incorrect.');
         process.exit(1);
     }
-    
+
     const problemLevel = problemInfoMatch[1];
     const problemTitle = problemInfoMatch[2];
-
     return { problemLevel, problemTitle };
 };
 
 const { problemLevel, problemTitle } = getCommitMessages();
-
 // 현재 커밋에 포함된 파일 경로와 파일명을 로그에 출력하는 함수
 const logUploadedFiles = () => {
     try {
         const output = execSync('git diff-tree --no-commit-id --name-only -r HEAD').toString().trim();
         const files = output.split('\n');
         console.log('Uploaded files:');
-        files.forEach(file => {
-            console.log(file);
-            const fileContent = execSync(`git show HEAD:${file}`).toString();
-            console.log(`Content of ${file}:`);
-            console.log(fileContent);
-        });
+        files.forEach(file => console.log(file));
         return files;
     } catch (error) {
         console.error('Failed to get uploaded files from the current commit.');
@@ -82,7 +71,16 @@ const logUploadedFiles = () => {
     }
 };
 
-const uploadedFiles = logUploadedFiles();
+const decodeFilePath = (filePath) => {
+    try {
+        return decodeURIComponent(filePath.replace(/\\x/g, '%'));
+    } catch (error) {
+        console.error('Failed to decode file path:', filePath, error);
+        return filePath;
+    }
+};
+
+const uploadedFiles = logUploadedFiles().map(decodeFilePath);
 
 const updateReadme = () => {
     let content = '';
@@ -91,30 +89,49 @@ const updateReadme = () => {
         title: problemTitle,
         level: problemLevel
     };
-
     if (fs.existsSync(readmePath)) {
         content = fs.readFileSync(readmePath, 'utf8');
     }
-
     const tableHeader = `
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 `;
 
     let tableContent = '';
-    const existingEntries = content.split('\n').slice(2); // 기존의 테이블 내용을 가져옵니다.
+    const tableStartIndex = content.indexOf(tableHeader);
     let index = 1;
 
-    // 기존의 테이블 내용을 새로운 내용으로 업데이트합니다.
-    for (const entry of existingEntries) {
-        if (entry.trim()) {
-            tableContent += `${entry}\n`;
-            index++;
-        }
+    if (tableStartIndex !== -1) {
+        tableContent = content.slice(tableStartIndex + tableHeader.length).trim();
+        const existingEntries = tableContent.split('\n').filter(entry => entry.startsWith('|'));
+        index = existingEntries.length + 1;
+        tableContent = existingEntries.join('\n');
     }
 
-    tableContent += `| ${index} | ${newEntry.date} | ${newEntry.title} | ${getDifficultyIconPath(newEntry.level)} |`;
-    fs.writeFileSync(readmePath, `${tableHeader}${tableContent}`);
+    const newTableRow = `| ${index} | ${newEntry.date} | ${newEntry.title} | ${getDifficultyIconPath(newEntry.level)} |`;
+
+    const newContent = content.slice(0, tableStartIndex + tableHeader.length).trim() + `\n${tableContent}\n${newTableRow}\n`;
+
+    fs.writeFileSync(readmePath, newContent);
+};
+
+// 변경된 README.md 파일의 내용을 로그에 출력하는 함수
+const logReadmeContents = () => {
+    uploadedFiles.forEach(file => {
+        console.log("File :", file);
+        const decodedFile = decodeFilePath(file);
+        console.log("Decode : ", decodedFile);
+        if (decodedFile.endsWith('README.md')) {
+            console.log(`Contents of ${decodedFile}:`);
+            try {
+                const readmeContent = fs.readFileSync(decodedFile, { encoding: 'utf8' });
+                console.log(readmeContent);
+            } catch (error) {
+                console.error(`Error reading ${decodedFile}: ${error.message}`);
+            }
+        }
+    });
 };
 
 updateReadme();
+logReadmeContents();
