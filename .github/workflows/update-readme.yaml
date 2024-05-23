@@ -4,7 +4,9 @@ on:
     branches:
       - main
     paths-ignore:
-      - README.md  # README.md 파일이 변경된 경우 트리거 무시
+      - README.md
+      - .github/**
+      
 jobs:
   update-readme:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"  # 커밋 메시지에 [skip ci]가 포함된 경우 실행 안 함
@@ -14,6 +16,26 @@ jobs:
       uses: actions/checkout@v4
       with:
         persist-credentials: false
+        
+    - name: Get changed files
+      run: |
+        git fetch origin main
+        git diff --name-only origin/main...HEAD > changed_files.txt
+        cat changed_files.txt
+        
+    - name: Read and log README.md contents if changed
+      run: |
+        if grep -q 'README.md' changed_files.txt; then
+          for file in $(grep 'README.md' changed_files.txt); do
+            echo "Contents of $file:"
+            cat $file
+          done
+        else
+          echo "No README.md files changed."
+        fi
+
+
+        
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
