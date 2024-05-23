@@ -117,6 +117,8 @@ const updateReadme = () => {
 // 변경된 README.md 파일의 내용을 로그에 출력하는 함수
 const logReadmeContents = () => {
     uploadedFiles.forEach(file => {
+        console.log("File :", file);
+        console.log("Decode : ", decodeURIComponent(file));
         if (file.endsWith('README.md')) {
             console.log(`Contents of ${file}:`);
             try {
