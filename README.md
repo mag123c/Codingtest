@@ -17,3 +17,4 @@ Git Actions을 통한 백준허브 오토커밋 시 README 자동화
 | 7 | 2024-05-23 | 긴자리 계산 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
 | 8 | 2024-05-23 | 크냐? | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
 | 9 | 2024-05-23 | 웰컴 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
+| 10 | 2024-05-23 | 마이크로소프트 로고 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
