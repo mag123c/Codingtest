@@ -75,10 +75,15 @@ const logUploadedFiles = () => {
 };
 
 const decodeFilePath = (filePath) => {
-    return Buffer.from(filePath, 'binary').toString('utf8');
+    try {
+        return decodeURIComponent(filePath.replace(/\\x/g, '%'));
+    } catch (error) {
+        console.error('Failed to decode file path:', filePath, error);
+        return filePath;
+    }
 };
 
-const uploadedFiles = logUploadedFiles().map(file => decodeURIComponent(file));
+const uploadedFiles = logUploadedFiles().map(decodeFilePath);
 
 const updateReadme = () => {
     let content = '';
@@ -118,7 +123,7 @@ const logReadmeContents = () => {
     uploadedFiles.forEach(file => {
         console.log("File :", file);
         const decodedFile = decodeFilePath(file);
-        console.log("Decode : ", decodedFile, "DecodeURI", decodeURIComponent(decodedFile));
+        console.log("Decode : ", decodedFile);
         if (decodedFile.endsWith('README.md')) {
             console.log(`Contents of ${decodedFile}:`);
             try {
