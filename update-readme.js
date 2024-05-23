@@ -37,7 +37,7 @@ const getDifficultyIconPath = (level) => {
         'Ruby II': 29,
         'Ruby I': 30
     };
-    return `<div align="center" ><img src="https://github.com/mag123c/Codingtest/blob/main/icon/${difficultyLevels[level] || 0}.svg" /></div>`
+    return `<div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/${difficultyLevels[level] || 0}.svg" /></div>`;
 };
 
 const getCommitMessages = () => {
@@ -97,19 +97,21 @@ const updateReadme = () => {
 `;
 
     let tableContent = '';
-    const existingEntries = content.split('\n').slice(2); // 기존의 테이블 내용을 가져옵니다.
+    const tableStartIndex = content.indexOf(tableHeader);
     let index = 1;
 
-    // 기존의 테이블 내용을 새로운 내용으로 업데이트합니다.
-    for (const entry of existingEntries) {
-        if (entry.trim()) {
-            tableContent += `${entry}\n`;
-            index++;
-        }
+    if (tableStartIndex !== -1) {
+        tableContent = content.slice(tableStartIndex + tableHeader.length).trim();
+        const existingEntries = tableContent.split('\n').filter(entry => entry.startsWith('|'));
+        index = existingEntries.length + 1;
+        tableContent = existingEntries.join('\n');
     }
 
-    tableContent += `| ${index} | ${newEntry.date} | ${newEntry.title} | ${getDifficultyIconPath(newEntry.level)} |`;
-    fs.writeFileSync(readmePath, `${tableHeader}${tableContent}`);
+    const newTableRow = `| ${index} | ${newEntry.date} | ${newEntry.title} | ${getDifficultyIconPath(newEntry.level)} |`;
+
+    const newContent = content.slice(0, tableStartIndex + tableHeader.length).trim() + `\n${tableContent}\n${newTableRow}\n`;
+
+    fs.writeFileSync(readmePath, newContent);
 };
 
 updateReadme();
