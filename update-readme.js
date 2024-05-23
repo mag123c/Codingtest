@@ -112,13 +112,15 @@ const updateReadme = () => {
 // 변경된 README.md 파일의 내용을 로그에 출력하는 함수
 const logReadmeContents = () => {
     uploadedFiles.forEach(file => {
-        if (file.endsWith('README.md')) {
-            console.log(`Contents of ${file}:`);
+        console.log('File :', file);
+        const decodedFile = decodeURIComponent(file);
+        if (decodedFile.endsWith('README.md')) {
+            console.log(`Contents of ${decodedFile}:`);
             try {
-                const readmeContent = fs.readFileSync(file, { encoding: 'utf8' });
+                const readmeContent = fs.readFileSync(decodedFile, { encoding: 'utf8' });
                 console.log(readmeContent);
             } catch (error) {
-                console.error(`Error reading ${file}: ${error.message}`);
+                console.error(`Error reading ${decodedFile}: ${error.message}`);
             }
         }
     });
