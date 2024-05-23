@@ -14,3 +14,4 @@ Git Actions을 통한 백준허브 오토커밋 시 README 자동화
 | 4 | 2024.05.22 | [신나는 함수 실행](https://www.acmicpc.net/problem/9184) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 | 5 | 2024.05.22 | [알고리즘 수업 - 피보나치 수 1](https://www.acmicpc.net/problem/24416) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 6 | 2024-05-23 | ACM 호텔 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
+| 7 | 2024-05-23 | 긴자리 계산 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
