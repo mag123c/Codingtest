@@ -20,6 +20,8 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
+    - name: Extract problem link
+      run: node extract-link.js
     - name: Update README.md
       run: node update-readme.js
     - name: Commit and push changes
@@ -29,6 +31,6 @@ jobs:
         git config --global user.email "diehreo@gmail.com"
         git config --global user.name "mag123c"
         git remote set-url origin https://x-access-token:${{ secrets.CODINGTEST_WORKFLOW_TOKEN }}@github.com/${{ github.repository }}.git
-        git add README.md
+        git add README.md link.txt
         git commit -m "Update README.md [skip ci]"
         git push origin HEAD:main
