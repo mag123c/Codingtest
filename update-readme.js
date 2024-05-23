@@ -115,10 +115,10 @@ const logReadmeContents = () => {
         if (file.endsWith('README.md')) {
             console.log(`Contents of ${file}:`);
             try {
-                const readmeContent = fs.readFileSync(file, 'utf8');
+                const readmeContent = fs.readFileSync(file, { encoding: 'utf8' });
                 console.log(readmeContent);
             } catch (error) {
-                console.error(`Error reading ${file}`);
+                console.error(`Error reading ${file}: ${error.message}`);
             }
         }
     });
