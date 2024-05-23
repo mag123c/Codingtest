@@ -5,12 +5,10 @@ on:
       - main
     paths-ignore:
       - README.md  # README.md 파일이 변경된 경우 트리거 무시
-
 jobs:
   update-readme:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"  # 커밋 메시지에 [skip ci]가 포함된 경우 실행 안 함
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -20,8 +18,6 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-    - name: Extract problem link
-      run: node extract-link.js
     - name: Update README.md
       run: node update-readme.js
     - name: Commit and push changes
@@ -31,6 +27,6 @@ jobs:
         git config --global user.email "diehreo@gmail.com"
         git config --global user.name "mag123c"
         git remote set-url origin https://x-access-token:${{ secrets.CODINGTEST_WORKFLOW_TOKEN }}@github.com/${{ github.repository }}.git
-        git add README.md link.txt
+        git add README.md
         git commit -m "Update README.md [skip ci]"
         git push origin HEAD:main
