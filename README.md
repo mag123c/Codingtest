@@ -2,9 +2,9 @@
 
 [풀이 포스팅](https://mag1c.tistory.com/category/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8)<br>
 Git Actions을 통한 백준허브 오토커밋 시 README 자동화
-<br><br><br><br>
+<br><br><br>
 <hr>
-<br><br>
+<br>
 
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
