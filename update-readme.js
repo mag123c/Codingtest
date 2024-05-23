@@ -75,11 +75,10 @@ const logUploadedFiles = () => {
 };
 
 const decodeFilePath = (filePath) => {
-    const buffer = Buffer.from(filePath, 'binary');
-    return buffer.toString('utf8');
+    return Buffer.from(filePath, 'binary').toString('utf8');
 };
 
-const uploadedFiles = logUploadedFiles().map(decodeFilePath);
+const uploadedFiles = logUploadedFiles().map(file => decodeURIComponent(file));
 
 const updateReadme = () => {
     let content = '';
@@ -118,14 +117,15 @@ const updateReadme = () => {
 const logReadmeContents = () => {
     uploadedFiles.forEach(file => {
         console.log("File :", file);
-        console.log("Decode : ", decodeURIComponent(file));
-        if (file.endsWith('README.md')) {
-            console.log(`Contents of ${file}:`);
+        const decodedFile = decodeFilePath(file);
+        console.log("Decode : ", decodedFile, "DecodeURI", decodeURIComponent(decodedFile));
+        if (decodedFile.endsWith('README.md')) {
+            console.log(`Contents of ${decodedFile}:`);
             try {
-                const readmeContent = fs.readFileSync(file, { encoding: 'utf8' });
+                const readmeContent = fs.readFileSync(decodedFile, { encoding: 'utf8' });
                 console.log(readmeContent);
             } catch (error) {
-                console.error(`Error reading ${file}: ${error.message}`);
+                console.error(`Error reading ${decodedFile}: ${error.message}`);
             }
         }
     });
