@@ -22,3 +22,4 @@ Git Actions을 통한 백준허브 오토커밋 시 README 자동화
 | 12 | 2024-05-23 | Who is in the middle? | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
 | 13 | 2024-05-23 | 큰 수 A+B | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
 | 14 | 2024-05-23 | We love kriii | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
+| 15 | 2024-05-23 | 고려대는 사랑입니다 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
