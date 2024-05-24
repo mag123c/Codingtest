@@ -1,6 +1,9 @@
 const fs = require('fs');
 const execSync = require('child_process').execSync;
+const axios = require('axios');
+const cheerio = require('cheerio');
 const readmePath = 'README.md';
+
 // 문제 난이도에 해당하는 SVG 파일 경로를 반환하는 함수
 const getDifficultyIconPath = (level) => {
     const difficultyLevels = {
@@ -57,6 +60,7 @@ const getCommitMessages = () => {
 };
 
 const { problemLevel, problemTitle } = getCommitMessages();
+
 // 현재 커밋에 포함된 파일 경로와 파일명을 로그에 출력하는 함수
 const logUploadedFiles = () => {
     try {
@@ -82,13 +86,32 @@ const decodeFilePath = (filePath) => {
 
 const uploadedFiles = logUploadedFiles().map(decodeFilePath);
 
-const updateReadme = () => {
+const fetchProblemLink = async (title) => {
+    try {
+        const searchUrl = `https://www.acmicpc.net/search#q=${encodeURIComponent(title)}&c=Problems`;
+        const { data } = await axios.get(searchUrl);
+        const $ = cheerio.load(data);
+        const firstResult = $('.results .inner-result').first();
+        const href = firstResult.find('h3 a').attr('href');
+        if (href) {
+            return `https://www.acmicpc.net${href}`;
+        } else {
+            throw new Error('No results found');
+        }
+    } catch (error) {
+        console.error('Failed to fetch problem link:', error);
+        return null;
+    }
+};
+
+const updateReadme = async () => {
     let content = '';
     const newEntry = {
         date: new Date().toISOString().slice(0, 10),
         title: problemTitle,
         level: problemLevel
     };
+    const problemLink = await fetchProblemLink(problemTitle);
     if (fs.existsSync(readmePath)) {
         content = fs.readFileSync(readmePath, 'utf8');
     }
@@ -108,7 +131,7 @@ const updateReadme = () => {
         tableContent = existingEntries.join('\n');
     }
 
-    const newTableRow = `| ${index} | ${newEntry.date} | ${newEntry.title} | ${getDifficultyIconPath(newEntry.level)} |`;
+    const newTableRow = `| ${index} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
 
     const newContent = content.slice(0, tableStartIndex + tableHeader.length).trim() + `\n${tableContent}\n${newTableRow}\n`;
 
@@ -133,5 +156,7 @@ const logReadmeContents = () => {
     });
 };
 
-updateReadme();
-logReadmeContents();
+(async () => {
+    await updateReadme();
+    logReadmeContents();
+})();
