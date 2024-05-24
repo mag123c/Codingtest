@@ -4,7 +4,6 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const readmePath = 'README.md';
 
-// 문제 난이도에 해당하는 SVG 파일 경로를 반환하는 함수
 const getDifficultyIconPath = (level) => {
     const difficultyLevels = {
         'Bronze V': 1,
@@ -131,7 +130,6 @@ const updateReadme = async () => {
     fs.writeFileSync(readmePath, newContent);
 };
 
-// 변경된 README.md 파일의 내용을 로그에 출력하는 함수
 const logReadmeContents = () => {
     uploadedFiles.forEach(file => {
         console.log("File :", file);
