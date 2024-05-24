@@ -12,7 +12,7 @@
 | 3 | 2024.05.22 | [01타일](https://www.acmicpc.net/problem/1904) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 4 | 2024.05.22 | [신나는 함수 실행](https://www.acmicpc.net/problem/9184) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 | 5 | 2024.05.22 | [알고리즘 수업 - 피보나치 수 1](https://www.acmicpc.net/problem/24416) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
-| 6 | 2024-05-23 | 연속합 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
-| 7 | 2024-05-23 | 포도주 시식 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
-| 8 | 2024-05-24 | 쉬운 계단 수 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
-| 9 | 2024-05-24 | 가장 긴 증가하는 부분 수열 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
+| 6 | 2024-05-23 | [연속합](https://www.acmicpc.net/problem/1912) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
+| 7 | 2024-05-23 | [포도주 시식](https://www.acmicpc.net/problem/2156) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
+| 8 | 2024-05-24 | [쉬운 계단 수](https://www.acmicpc.net/problem/10844) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
+| 9 | 2024-05-24 | [가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
