@@ -88,16 +88,9 @@ const uploadedFiles = logUploadedFiles().map(decodeFilePath);
 
 const fetchProblemLink = async (title) => {
     try {
-        const searchUrl = `https://www.acmicpc.net/search#q=${encodeURIComponent(title)}&c=Problems`;
-        const { data } = await axios.get(searchUrl);
-        const $ = cheerio.load(data);
-        const firstResult = $('.results .inner-result').first();
-        const href = firstResult.find('h3 a').attr('href');
-        if (href) {
-            return `https://www.acmicpc.net${href}`;
-        } else {
-            throw new Error('No results found');
-        }
+        const reqUrl = `https://solved.ac/api/v3/search/problem?query=${title}&page=1`;
+        const { data } = await axios.get(reqUrl);
+        return `https://www.acmicpc.net/problem/${data.items[0].problemId}`;
     } catch (error) {
         console.error('Failed to fetch problem link:', error);
         return null;
