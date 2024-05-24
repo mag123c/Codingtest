@@ -15,3 +15,4 @@
 | 6 | 2024-05-23 | 연속합 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 | 7 | 2024-05-23 | 포도주 시식 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 8 | 2024-05-24 | 쉬운 계단 수 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
+| 9 | 2024-05-24 | 가장 긴 증가하는 부분 수열 | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
