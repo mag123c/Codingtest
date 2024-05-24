@@ -16,3 +16,4 @@
 | 7 | 2024-05-23 | [포도주 시식](https://www.acmicpc.net/problem/2156) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 8 | 2024-05-24 | [쉬운 계단 수](https://www.acmicpc.net/problem/10844) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 9 | 2024-05-24 | [가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
+| 10 | 2024-05-24 | [가장 긴 바이토닉 부분 수열](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
