@@ -19,3 +19,4 @@
 | 10 | 2024-05-24 | [가장 긴 바이토닉 부분 수열](https://www.acmicpc.net/problem/11054) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 11 | 2024-05-25 | [평범한 배낭](https://www.acmicpc.net/problem/12865) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 12 | 2024-05-26 | [LCS](https://www.acmicpc.net/problem/1958) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 13 | 2024-05-27 | [전깃줄](https://www.acmicpc.net/problem/1365) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
