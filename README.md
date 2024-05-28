@@ -24,3 +24,4 @@
 | 15 | 2024-05-27 | [인간-컴퓨터 상호작용](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 16 | 2024-05-28 | [인간-컴퓨터 상호작용](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 17 | 2024-05-28 | [인간-컴퓨터 상호작용](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
+| 18 | 2024-05-28 | [인간-컴퓨터 상호작용](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
