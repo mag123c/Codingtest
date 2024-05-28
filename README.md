@@ -22,3 +22,4 @@
 | 13 | 2024-05-27 | [전깃줄](https://www.acmicpc.net/problem/1365) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 14 | 2024-05-27 | [수열](https://www.acmicpc.net/problem/1015) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 15 | 2024-05-27 | [인간-컴퓨터 상호작용](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
+| 16 | 2024-05-28 | [인간-컴퓨터 상호작용](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
