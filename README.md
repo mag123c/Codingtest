@@ -28,3 +28,4 @@
 | 19 | 2024-05-28 | [최대공약수와 최소공배수](https://www.acmicpc.net/problem/2609) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 20 | 2024-05-28 | [직각삼각형](https://www.acmicpc.net/problem/1711) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 21 | 2024-05-28 | [이항 계수 1](https://www.acmicpc.net/problem/11050) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
+| 22 | 2024-05-28 | [부녀회장이 될테야](https://www.acmicpc.net/problem/2775) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
