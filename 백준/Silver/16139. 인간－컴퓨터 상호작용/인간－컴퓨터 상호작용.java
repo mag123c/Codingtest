@@ -1,47 +1,58 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         String word = br.readLine();
         int q = Integer.parseInt(br.readLine());
 
         int[][] arr = countAlphabet(word);
 
         StringTokenizer st;
-        String a;
+        char a;
         int l;
         int r;
-        int cnt;
+        int idx;
         for (int i = 0; i < q; i ++) {
             st = new StringTokenizer(br.readLine());
-            a = st.nextToken();
+            a = st.nextToken().charAt(0);
             l = Integer.parseInt(st.nextToken());
             r = Integer.parseInt(st.nextToken());
-            cnt = 0;
+            idx = a - 'a';
 
-            for (int j = l; j <= r; j ++) {
-                cnt += arr[j][a.charAt(0) - 97];
+            if (l == 0) {
+                bw.write(arr[r][idx] + "\n");
             }
-
-            System.out.println(cnt);
+            else {
+                bw.write(arr[r][idx] - arr[l - 1][idx] + "\n");
+            }
         }
+
+        br.close();
+        bw.flush();
+        bw.close();
 
     }
 
     private static int[][] countAlphabet(String word) {
-        int[][] arr = new int[word.length()][26];
-        char[] c = word.toCharArray();
+        int length = word.length();
+        int[][] prefixCount = new int[length][26];
+        char[] chars = word.toCharArray();
 
-        for (int i = 0; i < word.length(); i ++) {
-            int alpNum = c[i] - 97;
-            arr[i][alpNum]++;
+        prefixCount[0][chars[0] - 'a'] = 1;
+
+        for (int i = 1; i < length; i++) {
+            for (int j = 0; j < 26; j++) {
+                prefixCount[i][j] = prefixCount[i - 1][j];
+            }
+            prefixCount[i][chars[i] - 'a']++;
         }
 
-        return arr;
+        return prefixCount;
     }
 
 }
+
+
