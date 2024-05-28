@@ -26,3 +26,4 @@
 | 17 | 2024-05-28 | [체스판 다시 칠하기 2](https://www.acmicpc.net/problem/25682) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 18 | 2024-05-28 | [평균](https://www.acmicpc.net/problem/1546) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 19 | 2024-05-28 | [최대공약수와 최소공배수](https://www.acmicpc.net/problem/2609) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
+| 20 | 2024-05-28 | [직각삼각형](https://www.acmicpc.net/problem/1711) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
