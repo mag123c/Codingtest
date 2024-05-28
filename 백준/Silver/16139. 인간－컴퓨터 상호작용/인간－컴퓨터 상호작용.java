@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,22 +13,23 @@ public class Main {
         int[][] arr = countAlphabet(word);
 
         StringTokenizer st;
-        String a;
+        char a;
         int l;
         int r;
-        int cnt;
+        int idx;
         for (int i = 0; i < q; i ++) {
             st = new StringTokenizer(br.readLine());
-            a = st.nextToken();
+            a = st.nextToken().charAt(0);
             l = Integer.parseInt(st.nextToken());
             r = Integer.parseInt(st.nextToken());
-            cnt = 0;
+            idx = a - 'a';
 
-            for (int j = l; j <= r; j ++) {
-                cnt += arr[j][a.charAt(0) - 97];
+            if (l == 0) {
+                System.out.println(arr[r][idx]);
             }
-
-            System.out.println(cnt);
+            else {
+                System.out.println(arr[r][idx] - arr[l - 1][idx]);
+            }
         }
 
     }
@@ -35,8 +37,12 @@ public class Main {
     private static int[][] countAlphabet(String word) {
         int[][] arr = new int[word.length()][26];
         char[] c = word.toCharArray();
+        int len = word.length();
 
-        for (int i = 0; i < word.length(); i ++) {
+        for (int i = 0; i < len; i ++) {
+            if (i > 0) {
+                System.arraycopy(arr[i - 1], 0, arr[i], 0, 26);
+            }
             int alpNum = c[i] - 97;
             arr[i][alpNum]++;
         }
@@ -45,3 +51,5 @@ public class Main {
     }
 
 }
+
+
