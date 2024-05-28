@@ -23,3 +23,4 @@
 | 14 | 2024-05-27 | [수열](https://www.acmicpc.net/problem/1015) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 15 | 2024-05-27 | [인간-컴퓨터 상호작용(50점)](https://www.acmicpc.net/problem/16139) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 17 | 2024-05-28 | [인간-컴퓨터 상호작용(100점)](https://www.acmicpc.net/problem/16139) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
+| 17 | 2024-05-28 | [체스판 다시 칠하기 2](https://www.acmicpc.net/problem/25682) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
