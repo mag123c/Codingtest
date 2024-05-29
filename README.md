@@ -31,3 +31,4 @@
 | 22 | 2024-05-29 | [Hashing](https://www.acmicpc.net/problem/5053) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
 | 23 | 2024-05-29 | [덩치](https://www.acmicpc.net/problem/7568) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 24 | 2024-05-29 | [팩토리얼 0의 개수](https://www.acmicpc.net/problem/1676) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
+| 25 | 2024-05-29 | [용액](https://www.acmicpc.net/problem/2467) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
