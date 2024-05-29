@@ -33,3 +33,4 @@
 | 24 | 2024-05-29 | [팩토리얼 0의 개수](https://www.acmicpc.net/problem/1676) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 25 | 2024-05-29 | [용액](https://www.acmicpc.net/problem/2467) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 26 | 2024-05-29 | [주유소](https://www.acmicpc.net/problem/13305) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
+| 27 | 2024-05-29 | [주유소](https://www.acmicpc.net/problem/13305) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
