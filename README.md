@@ -29,3 +29,4 @@
 | 20 | 2024-05-28 | [이항 계수 1](https://www.acmicpc.net/problem/11050) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 21 | 2024-05-28 | [부녀회장이 될테야](https://www.acmicpc.net/problem/2775) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 22 | 2024-05-29 | [Hashing](https://www.acmicpc.net/problem/5053) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
+| 23 | 2024-05-29 | [덩치](https://www.acmicpc.net/problem/7568) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
