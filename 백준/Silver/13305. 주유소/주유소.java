@@ -20,25 +20,14 @@ public class Main {
             city[i] = Integer.parseInt(st.nextToken());
         }
 
-        int money = 0;
+        long money = 0;
+        int minPrice = city[0];
 
-        for (int i = 0; i < N - 1; i ++) {
-            boolean isExpensive = false;
-            for (int j = i + 1; j < N - 1; j ++) {
-                if (city[i] > city[j]) {
-                    money += (city[i] * length[i]);
-                    isExpensive = true;
-                    break;
-                }
+        for (int i = 0; i < N - 1; i++) {
+            if (city[i] < minPrice) {
+                minPrice = city[i];
             }
-
-            if (!isExpensive) {
-                for (int j = i; j < N - 1; j ++) {
-                    money += (city[i] * length[j]);
-                }
-                System.out.println(money);
-                return;
-            }
+            money += (long) minPrice * length[i];
         }
 
         System.out.println(money);
