@@ -21,13 +21,11 @@
 | 12 | 2024-05-26 | [LCS](https://www.acmicpc.net/problem/1958) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 13 | 2024-05-27 | [전깃줄](https://www.acmicpc.net/problem/1365) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 14 | 2024-05-27 | [수열](https://www.acmicpc.net/problem/1015) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
-| 15 | 2024-05-27 | [인간-컴퓨터 상호작용(50점)](https://www.acmicpc.net/problem/16139) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
-| 17 | 2024-05-28 | [인간-컴퓨터 상호작용(100점)](https://www.acmicpc.net/problem/16139) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
-| 17 | 2024-05-28 | [체스판 다시 칠하기 2](https://www.acmicpc.net/problem/25682) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
-| 18 | 2024-05-28 | [평균](https://www.acmicpc.net/problem/1546) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
-| 19 | 2024-05-28 | [최대공약수와 최소공배수](https://www.acmicpc.net/problem/2609) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
-| 20 | 2024-05-28 | [직각삼각형](https://www.acmicpc.net/problem/1711) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
-| 21 | 2024-05-28 | [이항 계수 1](https://www.acmicpc.net/problem/11050) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
-| 22 | 2024-05-28 | [부녀회장이 될테야](https://www.acmicpc.net/problem/2775) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
-| 23 | 2024-05-29 | [Hashing](https://www.acmicpc.net/problem/5053) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
-| 24 | 2024-05-29 | [Hashing](https://www.acmicpc.net/problem/5053) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
+| 15 | 2024-05-28 | [인간-컴퓨터 상호작용](https://www.acmicpc.net/problem/16139) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
+| 16 | 2024-05-28 | [체스판 다시 칠하기 2](https://www.acmicpc.net/problem/25682) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 17 | 2024-05-28 | [평균](https://www.acmicpc.net/problem/1546) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
+| 18 | 2024-05-28 | [최대공약수와 최소공배수](https://www.acmicpc.net/problem/2609) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
+| 19 | 2024-05-28 | [직각삼각형](https://www.acmicpc.net/problem/1711) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
+| 20 | 2024-05-28 | [이항 계수 1](https://www.acmicpc.net/problem/11050) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
+| 21 | 2024-05-28 | [부녀회장이 될테야](https://www.acmicpc.net/problem/2775) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
+| 22 | 2024-05-29 | [Hashing](https://www.acmicpc.net/problem/5053) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
