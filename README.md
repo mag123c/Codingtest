@@ -35,3 +35,4 @@
 | 26 | 2024-05-29 | [주유소](https://www.acmicpc.net/problem/13305) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 27 | 2024-05-30 | [색종이 만들기](https://www.acmicpc.net/problem/2630) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 | 28 | 2024-05-30 | [쿼드트리](https://www.acmicpc.net/problem/1992) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
+| 29 | 2024-05-30 | [종이의 개수](https://www.acmicpc.net/problem/1780) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
