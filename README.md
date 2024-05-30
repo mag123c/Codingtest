@@ -37,3 +37,4 @@
 | 28 | 2024-05-30 | [쿼드트리](https://www.acmicpc.net/problem/1992) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 29 | 2024-05-30 | [종이의 개수](https://www.acmicpc.net/problem/1780) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 | 30 | 2024-05-30 | [행렬 곱셈](https://www.acmicpc.net/problem/2740) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
+| 31 | 2024-05-30 | [행렬 제곱](https://www.acmicpc.net/problem/10830) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
