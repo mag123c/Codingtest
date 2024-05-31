@@ -40,3 +40,4 @@
 | 31 | 2024-05-30 | [행렬 제곱](https://www.acmicpc.net/problem/10830) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 32 | 2024-05-31 | [피보나치 수 6](https://www.acmicpc.net/problem/11444) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
 | 33 | 2024-05-31 | [공유기 설치](https://www.acmicpc.net/problem/2110) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 34 | 2024-05-31 | [2×n 타일링 2](https://www.acmicpc.net/problem/11726) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
