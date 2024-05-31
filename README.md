@@ -39,3 +39,4 @@
 | 30 | 2024-05-30 | [행렬 곱셈](https://www.acmicpc.net/problem/2740) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 31 | 2024-05-30 | [행렬 제곱](https://www.acmicpc.net/problem/10830) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 32 | 2024-05-31 | [피보나치 수 6](https://www.acmicpc.net/problem/11444) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
+| 33 | 2024-05-31 | [공유기 설치](https://www.acmicpc.net/problem/2110) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
