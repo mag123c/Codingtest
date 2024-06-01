@@ -51,4 +51,4 @@
 
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
-| 36 | 2024-06-01 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
+| 1 | 2024-06-01 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
