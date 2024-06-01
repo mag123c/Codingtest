@@ -119,10 +119,14 @@ const updateReadme = async () => {
     if (tableStartIndex !== -1) {
         tableContent = content.slice(tableStartIndex + tableHeader.length).trim();
         const existingEntries = tableContent.split('\n').filter(entry => entry.startsWith('|'));
-        index = existingEntries.length + 1;
-        tableContent = existingEntries.join('\n');
         if (existingEntries.length > 0) {
             lastEntryDate = existingEntries[existingEntries.length - 1].split('|')[2].trim();
+        }
+        if (lastEntryDate && newEntry.date.slice(0, 7) === lastEntryDate.slice(0, 7)) {
+            index = existingEntries.length + 1;
+            tableContent = existingEntries.join('\n');
+        } else {
+            tableContent = '';
         }
     }
 
