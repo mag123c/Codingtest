@@ -49,6 +49,7 @@
 </details>
 
 | #  | 날짜 | 문제 | 난이도 |
+|:---:|:---:|:---:|:---:|
 | 1 | 2024-06-01 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 2 | 2024-06-02 | [두 수의 합](https://www.acmicpc.net/problem/3273) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 3 | 2024-06-02 | [두 용액](https://www.acmicpc.net/problem/2470) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
