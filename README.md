@@ -52,3 +52,4 @@
 | 39 | 2024-06-02 | [두 수의 합](https://www.acmicpc.net/problem/3273) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 40 | 2024-06-02 | [두 용액](https://www.acmicpc.net/problem/2470) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 41 | 2024-06-02 | [부분합](https://www.acmicpc.net/problem/1806) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 42 | 2024-06-03 | [iCow](https://www.acmicpc.net/problem/6161) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
