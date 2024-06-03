@@ -125,7 +125,8 @@ const updateReadme = async () => {
             index = existingEntries.length + 1;
             tableContent = existingEntries.join('\n');
         } else {
-            tableContent = '';
+            tableContent = existingEntries.join('\n');
+            index = 1;
         }
     }
 
@@ -138,7 +139,9 @@ const updateReadme = async () => {
     <summary>${lastEntryDate.slice(0, 7)} 풀이 목록</summary>
 
 ${tableHeader}${tableContent}
-</details>\n\n${tableHeader}${newTableRow}\n`;
+</details>
+
+${tableHeader}${newTableRow}\n`;
         newContent = content.slice(0, tableStartIndex).trim() + `\n${foldedContent}`;
     } else {
         newContent = content.slice(0, tableStartIndex + tableHeader.length).trim() + `\n${tableContent}\n${newTableRow}\n`;
