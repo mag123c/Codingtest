@@ -1,7 +1,6 @@
 const fs = require('fs');
 const execSync = require('child_process').execSync;
 const axios = require('axios');
-const cheerio = require('cheerio');
 const readmePath = 'README.md';
 
 const getDifficultyIconPath = (level) => {
@@ -120,7 +119,7 @@ const updateReadme = async () => {
         tableContent = content.slice(tableStartIndex + tableHeader.length).trim();
         const existingEntries = tableContent.split('\n').filter(entry => entry.startsWith('|'));
         if (existingEntries.length > 0) {
-            lastEntryDate = existingEntries[existingEntries.length - 1].split('|')[2].trim();
+            lastEntryDate = existingEntries[existingEntries.length - 1].split('|')[1].trim();
         }
         if (lastEntryDate && newEntry.date.slice(0, 7) === lastEntryDate.slice(0, 7)) {
             index = existingEntries.length + 1;
@@ -139,9 +138,7 @@ const updateReadme = async () => {
     <summary>${lastEntryDate.slice(0, 7)} 풀이 목록</summary>
 
 ${tableHeader}${tableContent}
-</details>
-
-${tableHeader}${newTableRow}\n`;
+</details>\n\n${tableHeader}${newTableRow}\n`;
         newContent = content.slice(0, tableStartIndex).trim() + `\n${foldedContent}`;
     } else {
         newContent = content.slice(0, tableStartIndex + tableHeader.length).trim() + `\n${tableContent}\n${newTableRow}\n`;
