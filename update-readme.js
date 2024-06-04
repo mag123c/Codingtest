@@ -125,7 +125,15 @@ const updateReadme = async () => {
             index = existingEntries.length + 1;
             tableContent = existingEntries.join('\n');
         } else {
-            tableContent = existingEntries.join('\n');
+            const foldedContent = `
+<details>
+    <summary>${lastEntryDate.slice(0, 7)} 풀이 목록</summary>
+
+${tableHeader}${tableContent}
+</details>
+`;
+            content = content.slice(0, tableStartIndex).trim() + foldedContent;
+            tableContent = '';
             index = 1;
         }
     }
@@ -134,15 +142,7 @@ const updateReadme = async () => {
 
     let newContent;
     if (lastEntryDate && newEntry.date.slice(0, 7) !== lastEntryDate.slice(0, 7)) {
-        const foldedContent = `
-<details>
-    <summary>${lastEntryDate.slice(0, 7)} 풀이 목록</summary>
-
-${tableHeader}${tableContent}
-</details>
-
-${tableHeader}${newTableRow}\n`;
-        newContent = content.slice(0, tableStartIndex).trim() + `\n${foldedContent}`;
+        newContent = content + `\n${tableHeader}${newTableRow}\n`;
     } else {
         newContent = content.slice(0, tableStartIndex + tableHeader.length).trim() + `\n${tableContent}\n${newTableRow}\n`;
     }
