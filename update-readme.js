@@ -1,6 +1,7 @@
-import * as axios from 'axios';
-import { existsSync, readFileSync } from 'fs';
-const readmePath = 'test.md';
+const fs = require('fs');
+const execSync = require('child_process').execSync;
+const axios = require('axios');
+const readmePath = 'README.md';
 
 const getDifficultyIconPath = (level) => {
     const difficultyLevels = {
