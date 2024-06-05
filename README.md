@@ -2,9 +2,6 @@
 
 <details>
     <summary>2024-05 풀이 목록</summary>
-<details>
-    <summary>8 풀이 목록</summary>
-
 
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
