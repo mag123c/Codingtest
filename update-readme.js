@@ -1,7 +1,6 @@
-const fs = require('fs');
-const execSync = require('child_process').execSync;
-const axios = require('axios');
-const readmePath = 'README.md';
+import * as axios from 'axios';
+import { existsSync, readFileSync } from 'fs';
+const readmePath = 'test.md';
 
 const getDifficultyIconPath = (level) => {
     const difficultyLevels = {
@@ -40,7 +39,8 @@ const getDifficultyIconPath = (level) => {
 };
 
 const getCommitMessages = () => {
-    const output = execSync('git log -1 --pretty=%B').toString().trim();
+    const output = "[Bronze III] Title: 웰컴 키트, Time: 152 ms, Memory: 15976 KB -BaekjoonHub"
+    // const output = execSync('git log -1 --pretty=%B').toString().trim();
     if (!output.includes('-BaekjoonHub')) {
         console.error('This commit is not from BaekjoonHub.');
         process.exit(1);
@@ -59,29 +59,6 @@ const getCommitMessages = () => {
 
 const { problemLevel, problemTitle } = getCommitMessages();
 
-const logUploadedFiles = () => {
-    try {
-        const output = execSync('git diff-tree --no-commit-id --name-only -r HEAD').toString().trim();
-        const files = output.split('\n');
-        console.log('Uploaded files:');
-        files.forEach(file => console.log(file));
-        return files;
-    } catch (error) {
-        console.error('Failed to get uploaded files from the current commit.');
-        process.exit(1);
-    }
-};
-
-const decodeFilePath = (filePath) => {
-    try {
-        return decodeURIComponent(filePath.replace(/\\x/g, '%'));
-    } catch (error) {
-        console.error('Failed to decode file path:', filePath, error);
-        return filePath;
-    }
-};
-
-const uploadedFiles = logUploadedFiles().map(decodeFilePath);
 
 const fetchProblemLink = async (title) => {
     try {
@@ -96,96 +73,58 @@ const fetchProblemLink = async (title) => {
 
 const updateReadme = async () => {
     let content = '';
+    const defaultDiv = '<div align="center">\n\n';
     const newEntry = {
-        date: new Date().toISOString().slice(0, 10).replace(/-/g, '.'),
+        date: new Date('2024-07-01').toISOString().slice(0, 10).replace(/-/g, '.'),
         title: problemTitle,
         level: problemLevel
     };
     const problemLink = await fetchProblemLink(problemTitle);
-    if (fs.existsSync(readmePath)) {
-        content = fs.readFileSync(readmePath, 'utf8');
+    if (existsSync(readmePath)) {
+        content = readFileSync(readmePath, 'utf8');
     }
+
+    let curContent = content.replace(/<details[\s\S]*?<\/details>/gi, '').split("\n\n\n\n")[1];
+    const detailsRegex = /<details[\s\S]*?<\/details>/gi;
+    let detailsContent = content.match(detailsRegex) || [];
+    if (detailsContent.length > 0) {
+        detailsContent = detailsContent.map(detail => `${detail}\n\n`);
+    }
+
+    const curDate = parseLastDate(curContent);
+    const curIdx = parseLastIdx(curContent);
     const tableHeader = `
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 `;
 
-    const newTableRow = `| 1 | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
+    //달이 바꼈을 경우 기존 데이터는 접은글로
+    if (newEntry.date.slice(5, 7) != curDate.slice(5, 7)) {
+        const updateContent = `<details>\n<summary>${curDate.slice(0, 7)} 풀이 목록</summary>\n${curContent}\n</details>\n\n`;
+        const newTableRow = `| ${1} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
 
-    if (!content.includes(tableHeader)) {
-        // README.md에 처음으로 테이블을 추가하는 경우
-        content += `${tableHeader}${newTableRow}\n`;
-    } else {
-        const lines = content.split('\n');
-        const currentMonth = newEntry.date.slice(0, 7);
-        let lastTableIndex = -1;
-        let lastTableMonth = '';
+        content = defaultDiv + detailsContent + updateContent + tableHeader + newTableRow + "\n";
+    }
+    else {
+        const newTableRow = `| ${+curIdx + 1} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
+        curContent = curContent + "\n" + newTableRow + "\n";
+        content = defaultDiv + detailsContent + curContent;
 
-        for (let i = lines.length - 1; i >= 0; i--) {
-            if (lines[i].startsWith('|') && lines[i].includes('|')) {
-                const date = lines[i].split('|')[2].trim();
-                const month = date.slice(0, 7);
-                if (month === currentMonth) {
-                    lastTableIndex = i;
-                    lastTableMonth = month;
-                    break;
-                } else if (month < currentMonth) {
-                    break;
-                }
-            }
-        }
-
-        if (lastTableIndex !== -1) {
-            // 같은 달의 테이블이 존재하는 경우
-            const tableLines = lines.slice(0, lastTableIndex + 1);
-            const tableContent = lines.slice(lastTableIndex + 1);
-            const tableCount = tableLines.filter(line => line.startsWith('|') && line.includes('|')).length;
-            const newRow = `| ${tableCount + 1} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
-
-            lines.splice(lastTableIndex + 1, 0, newRow);
-            content = lines.join('\n');
-        } else {
-            // 새로운 달의 테이블을 추가해야 하는 경우
-            let lastMonthIndex = lines.findIndex(line => line.startsWith('<details>'));
-
-            if (lastMonthIndex !== -1) {
-                const endIndex = lines.findIndex((line, idx) => idx > lastMonthIndex && line.startsWith('</details>'));
-                const oldContent = lines.slice(0, lastMonthIndex).join('\n');
-                const oldDetails = lines.slice(lastMonthIndex, endIndex + 1).join('\n');
-                const newContent = `${oldContent}\n<details>\n<summary>${lastTableMonth} 풀이 목록</summary>\n\n${tableHeader}${oldDetails}\n</details>\n\n${tableHeader}${newTableRow}\n`;
-
-                content = newContent;
-            } else {
-                // 접은글이 없는 경우
-                const oldContent = lines.join('\n');
-                const newContent = `${oldContent}\n\n${tableHeader}${newTableRow}\n`;
-
-                content = newContent;
-            }
-        }
+        console.log(content);
     }
 
-    fs.writeFileSync(readmePath, content);
+    writeFileSync(readmePath, content);
 };
 
-const logReadmeContents = () => {
-    uploadedFiles.forEach(file => {
-        console.log("File :", file);
-        const decodedFile = decodeFilePath(file);
-        console.log("Decode : ", decodedFile);
-        if (decodedFile.endsWith('README.md')) {
-            console.log(`Contents of ${decodedFile}:`);
-            try {
-                const readmeContent = fs.readFileSync(decodedFile, { encoding: 'utf8' });
-                console.log(readmeContent);
-            } catch (error) {
-                console.error(`Error reading ${decodedFile}: ${error.message}`);
-            }
-        }
-    });
-};
+function parseLastDate(content) {
+    const lines = content.split('\n');
+    return lines[lines.length - 1].split("|")[2].trim();
+}
 
-(async () => {
-    await updateReadme();
-    logReadmeContents();
-})();
+function parseLastIdx(content) {
+    const lines = content.split('\n');
+    return lines[lines.length - 1].split("|")[1].trim();
+}
+
+
+updateReadme();
