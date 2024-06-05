@@ -2,9 +2,6 @@
 
 <details>
     <summary>2024-05 풀이 목록</summary>
-<details>
-    <summary>8 풀이 목록</summary>
-
 
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
@@ -44,8 +41,6 @@
 | 34 | 2024-05-31 | [2×n 타일링 2](https://www.acmicpc.net/problem/11726) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 35 | 2024-05-31 | [헌내기는 친구가 필요해](https://www.acmicpc.net/problem/21736) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 </details>
-
-
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024-06-01 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
@@ -56,9 +51,3 @@
 | 6 | 2024-06-03 | [카잉 달력](https://www.acmicpc.net/problem/6064) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 7 | 2024-06-03 | [토마토](https://www.acmicpc.net/problem/7569) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 8 | 2024-06-04 | [이중 우선순위 큐](https://www.acmicpc.net/problem/7662) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
-</details>
-
-
-| #  | 날짜 | 문제 | 난이도 |
-|:---:|:---:|:---:|:---:|
-| 1 | 2024-06-05 | [FizzBuzz](https://www.acmicpc.net/problem/14761) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
