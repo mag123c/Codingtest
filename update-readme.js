@@ -97,7 +97,7 @@ const fetchProblemLink = async (title) => {
 const updateReadme = async () => {
     let content = '';
     const newEntry = {
-        date: new Date().toISOString().slice(0, 10),
+        date: new Date().toISOString().slice(0, 10).replace(/-/g, '.'),
         title: problemTitle,
         level: problemLevel
     };
@@ -110,44 +110,62 @@ const updateReadme = async () => {
 |:---:|:---:|:---:|:---:|
 `;
 
-    let tableContent = '';
-    const tableStartIndex = content.indexOf(tableHeader);
-    let index = 1;
-    let lastEntryDate = null;
+    const newTableRow = `| 1 | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
 
-    if (tableStartIndex !== -1) {
-        tableContent = content.slice(tableStartIndex + tableHeader.length).trim();
-        const existingEntries = tableContent.split('\n').filter(entry => entry.startsWith('|'));
-        if (existingEntries.length > 0) {
-            lastEntryDate = existingEntries[existingEntries.length - 1].split('|')[1].trim();
-        }
-        if (lastEntryDate && newEntry.date.slice(0, 7) === lastEntryDate.slice(0, 7)) {
-            index = existingEntries.length + 1;
-            tableContent = existingEntries.join('\n');
-        } else {
-            const foldedContent = `
-<details>
-    <summary>${lastEntryDate.slice(0, 7)} 풀이 목록</summary>
-
-${tableHeader}${tableContent}
-</details>
-`;
-            content = content.slice(0, tableStartIndex).trim() + foldedContent;
-            tableContent = '';
-            index = 1;
-        }
-    }
-
-    const newTableRow = `| ${index} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
-
-    let newContent;
-    if (lastEntryDate && newEntry.date.slice(0, 7) !== lastEntryDate.slice(0, 7)) {
-        newContent = content + `\n${tableHeader}${newTableRow}\n`;
+    if (!content.includes(tableHeader)) {
+        // README.md에 처음으로 테이블을 추가하는 경우
+        content += `${tableHeader}${newTableRow}\n`;
     } else {
-        newContent = content.slice(0, tableStartIndex + tableHeader.length).trim() + `\n${tableContent}\n${newTableRow}\n`;
+        const lines = content.split('\n');
+        const currentMonth = newEntry.date.slice(0, 7);
+        let lastTableIndex = -1;
+        let lastTableMonth = '';
+
+        for (let i = lines.length - 1; i >= 0; i--) {
+            if (lines[i].startsWith('|') && lines[i].includes('|')) {
+                const date = lines[i].split('|')[2].trim();
+                const month = date.slice(0, 7);
+                if (month === currentMonth) {
+                    lastTableIndex = i;
+                    lastTableMonth = month;
+                    break;
+                } else if (month < currentMonth) {
+                    break;
+                }
+            }
+        }
+
+        if (lastTableIndex !== -1) {
+            // 같은 달의 테이블이 존재하는 경우
+            const tableLines = lines.slice(0, lastTableIndex + 1);
+            const tableContent = lines.slice(lastTableIndex + 1);
+            const tableCount = tableLines.filter(line => line.startsWith('|') && line.includes('|')).length;
+            const newRow = `| ${tableCount + 1} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
+
+            lines.splice(lastTableIndex + 1, 0, newRow);
+            content = lines.join('\n');
+        } else {
+            // 새로운 달의 테이블을 추가해야 하는 경우
+            let lastMonthIndex = lines.findIndex(line => line.startsWith('<details>'));
+
+            if (lastMonthIndex !== -1) {
+                const endIndex = lines.findIndex((line, idx) => idx > lastMonthIndex && line.startsWith('</details>'));
+                const oldContent = lines.slice(0, lastMonthIndex).join('\n');
+                const oldDetails = lines.slice(lastMonthIndex, endIndex + 1).join('\n');
+                const newContent = `${oldContent}\n<details>\n<summary>${lastTableMonth} 풀이 목록</summary>\n\n${tableHeader}${oldDetails}\n</details>\n\n${tableHeader}${newTableRow}\n`;
+
+                content = newContent;
+            } else {
+                // 접은글이 없는 경우
+                const oldContent = lines.join('\n');
+                const newContent = `${oldContent}\n\n${tableHeader}${newTableRow}\n`;
+
+                content = newContent;
+            }
+        }
     }
 
-    fs.writeFileSync(readmePath, newContent);
+    fs.writeFileSync(readmePath, content);
 };
 
 const logReadmeContents = () => {
