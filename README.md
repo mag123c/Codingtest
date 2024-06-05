@@ -1,7 +1,7 @@
 <div align="center">
 
 <details>
-    <summary>2024-05 풀이 목록</summary>
+<summary>2024-05 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024.05.21 | [스도쿠](https://www.acmicpc.net/problem/2580) | <div align="center" ><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
