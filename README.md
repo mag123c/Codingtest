@@ -2,6 +2,9 @@
 
 <details>
     <summary>2024-05 풀이 목록</summary>
+<details>
+    <summary>8 풀이 목록</summary>
+
 
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
@@ -41,6 +44,8 @@
 | 34 | 2024-05-31 | [2×n 타일링 2](https://www.acmicpc.net/problem/11726) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 35 | 2024-05-31 | [헌내기는 친구가 필요해](https://www.acmicpc.net/problem/21736) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 </details>
+
+
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024-06-01 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
