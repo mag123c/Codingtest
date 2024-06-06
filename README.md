@@ -52,3 +52,4 @@
 | 7 | 2024-06-03 | [토마토](https://www.acmicpc.net/problem/7569) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 8 | 2024-06-04 | [이중 우선순위 큐](https://www.acmicpc.net/problem/7662) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 9 | 2024-06-05 | [과일 탕후루](https://www.acmicpc.net/problem/30804) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
+| 10 | 2024-06-06 | [트리 순회](https://www.acmicpc.net/problem/1991) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
