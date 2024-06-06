@@ -39,9 +39,8 @@ const getDifficultyIconPath = (level) => {
     return `<div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/${difficultyLevels[level] || 0}.svg" /></div>`;
 };
 
-const getCommitMessages = () => {
-    const output = "[Bronze III] Title: 웰컴 키트, Time: 152 ms, Memory: 15976 KB -BaekjoonHub"
-    // const output = execSync('git log -1 --pretty=%B').toString().trim();
+const getCommitMessages = () => {    
+    const output = execSync('git log -1 --pretty=%B').toString().trim();
     if (!output.includes('-BaekjoonHub')) {
         console.error('This commit is not from BaekjoonHub.');
         process.exit(1);
@@ -81,8 +80,8 @@ const updateReadme = async () => {
         level: problemLevel
     };
     const problemLink = await fetchProblemLink(problemTitle);
-    if (existsSync(readmePath)) {
-        content = readFileSync(readmePath, 'utf8');
+    if (fs.existsSync(readmePath)) {
+        content = fs.readFileSync(readmePath, 'utf8');
     }
 
     let curContent = content.replace(/<details[\s\S]*?<\/details>/gi, '').split("\n\n\n\n")[1];
