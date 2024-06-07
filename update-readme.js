@@ -59,7 +59,6 @@ const getCommitMessages = () => {
 
 const { problemLevel, problemTitle } = getCommitMessages();
 
-
 const fetchProblemLink = async (title) => {
     try {
         const reqUrl = `https://solved.ac/api/v3/search/problem?query=${title}&page=1`;
@@ -75,7 +74,7 @@ const updateReadme = async () => {
     let content = '';
     const defaultDiv = '<div align="center">\n\n';
     const newEntry = {
-        date: new Date('2024-07-01').toISOString().slice(0, 10).replace(/-/g, '.'),
+        date: new Date().toISOString().slice(0, 10).replace(/-/g, '.'),
         title: problemTitle,
         level: problemLevel
     };
@@ -98,33 +97,31 @@ const updateReadme = async () => {
 |:---:|:---:|:---:|:---:|
 `;
 
-    //달이 바꼈을 경우 기존 데이터는 접은글로
+    // 달이 바꼈을 경우 기존 데이터는 접은글로
     if (newEntry.date.slice(5, 7) != curDate.slice(5, 7)) {
         const updateContent = `<details>\n<summary>${curDate.slice(0, 7)} 풀이 목록</summary>\n${curContent}\n</details>\n\n`;
         const newTableRow = `| ${1} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
 
         content = defaultDiv + detailsContent + updateContent + tableHeader + newTableRow + "\n";
-    }
-    else {
+    } else {
         const newTableRow = `| ${+curIdx + 1} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
         curContent = curContent + "\n" + newTableRow + "\n";
-        content = defaultDiv + detailsContent + curContent;
+        content = defaultDiv + detailsContent + tableHeader + curContent;
 
         console.log(content);
     }
 
-    writeFileSync(readmePath, content);
+    fs.writeFileSync(readmePath, content);
 };
 
 function parseLastDate(content) {
-    const lines = content.split('\n');
-    return lines[lines.length - 1].split("|")[2].trim();
-}
-
-function parseLastIdx(content) {
-    const lines = content.split('\n');
+    const lines = content.split('\n').filter(line => line.trim() !== '');
     return lines[lines.length - 1].split("|")[1].trim();
 }
 
+function parseLastIdx(content) {
+    const lines = content.split('\n').filter(line => line.trim() !== '');
+    return lines[lines.length - 1].split("|")[0].trim();
+}
 
 updateReadme();
