@@ -79,8 +79,8 @@ const updateReadme = async () => {
         level: problemLevel
     };
     const problemLink = await fetchProblemLink(problemTitle);
-    if (existsSync(readmePath)) {
-        content = readFileSync(readmePath, 'utf8');
+    if (fs.existsSync(readmePath)) {
+        content = fs.readFileSync(readmePath, 'utf8');
     }
 
     let curContent = content.replace(/<details[\s\S]*?<\/details>/gi, '').split("\r\n\r\n\r\n\r\n")[1];
