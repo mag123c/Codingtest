@@ -83,7 +83,7 @@ const updateReadme = async () => {
         content = fs.readFileSync(readmePath, 'utf8');
     }
 
-    let curContent = content.replace(/<details[\s\S]*?<\/details>/gi, '').split("\r\n\r\n\r\n\r\n")[1];
+    let curContent = content.replace(/<details[\s\S]*?<\/details>/gi, '').split("\n\n\n\n")[1];
 
     const detailsRegex = /<details[\s\S]*?<\/details>/gi;
     let detailsContent = content.match(detailsRegex) || [];
