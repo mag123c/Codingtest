@@ -41,8 +41,6 @@
 | 35 | 2024-05-31 | [헌내기는 친구가 필요해](https://www.acmicpc.net/problem/21736) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 </details>
 
-<details>
-<summary>11 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024-06-01 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
@@ -56,10 +54,4 @@
 | 9 | 2024-06-05 | [과일 탕후루](https://www.acmicpc.net/problem/30804) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 | 10 | 2024-06-06 | [트리 순회](https://www.acmicpc.net/problem/1991) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 11 | 2024-06-07 | [팩토리얼](https://www.acmicpc.net/problem/10872) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
-
-</details>
-
-
-| #  | 날짜 | 문제 | 난이도 |
-|:---:|:---:|:---:|:---:|
-| 1 | 2024.06.08 | [숨바꼭질 3](https://www.acmicpc.net/problem/13549) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 12 | 2024.06.08 | [숨바꼭질 3](https://www.acmicpc.net/problem/13549) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
