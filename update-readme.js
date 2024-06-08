@@ -79,11 +79,12 @@ const updateReadme = async () => {
         level: problemLevel
     };
     const problemLink = await fetchProblemLink(problemTitle);
-    if (fs.existsSync(readmePath)) {
-        content = fs.readFileSync(readmePath, 'utf8');
+    if (existsSync(readmePath)) {
+        content = readFileSync(readmePath, 'utf8');
     }
 
-    let curContent = content.replace(/<details[\s\S]*?<\/details>/gi, '').split("\n\n\n\n")[1];
+    let curContent = content.replace(/<details[\s\S]*?<\/details>/gi, '').split("\r\n\r\n\r\n\r\n")[1];
+
     const detailsRegex = /<details[\s\S]*?<\/details>/gi;
     let detailsContent = content.match(detailsRegex) || [];
     if (detailsContent.length > 0) {
@@ -97,31 +98,30 @@ const updateReadme = async () => {
 |:---:|:---:|:---:|:---:|
 `;
 
-    // 달이 바꼈을 경우 기존 데이터는 접은글로
     if (newEntry.date.slice(5, 7) != curDate.slice(5, 7)) {
         const updateContent = `<details>\n<summary>${curDate.slice(0, 7)} 풀이 목록</summary>\n${curContent}\n</details>\n\n`;
         const newTableRow = `| ${1} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
 
         content = defaultDiv + detailsContent + updateContent + tableHeader + newTableRow + "\n";
-    } else {
+    }
+    else {
         const newTableRow = `| ${+curIdx + 1} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
         curContent = curContent + "\n" + newTableRow + "\n";
-        content = defaultDiv + detailsContent + tableHeader + curContent;
-
+        content = defaultDiv + detailsContent + curContent;
         console.log(content);
     }
 
-    fs.writeFileSync(readmePath, content);
+    writeFileSync(readmePath, content);
 };
 
 function parseLastDate(content) {
     const lines = content.split('\n').filter(line => line.trim() !== '');
-    return lines[lines.length - 1].split("|")[1].trim();
+    return lines[lines.length - 1].split("|")[2].trim();
 }
 
 function parseLastIdx(content) {
     const lines = content.split('\n').filter(line => line.trim() !== '');
-    return lines[lines.length - 1].split("|")[0].trim();
+    return lines[lines.length - 1].split("|")[1].trim();
 }
 
 updateReadme();
