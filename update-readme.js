@@ -111,7 +111,7 @@ const updateReadme = async () => {
         console.log(content);
     }
 
-    writeFileSync(readmePath, content);
+    fs.writeFileSync(readmePath, content);
 };
 
 function parseLastDate(content) {
