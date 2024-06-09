@@ -58,3 +58,4 @@
 | 13 | 2024.06.08 | [알고스팟](https://www.acmicpc.net/problem/1261) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 14 | 2024.06.09 | [미로만들기](https://www.acmicpc.net/problem/2665) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 15 | 2024.06.09 | [파티](https://www.acmicpc.net/problem/1238) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
+| 16 | 2024.06.09 | [파티](https://www.acmicpc.net/problem/1238) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
