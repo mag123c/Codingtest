@@ -19,8 +19,6 @@ public class Main {
         }
     }
 
-    private static int[][] dist;
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -28,19 +26,12 @@ public class Main {
         int M = Integer.parseInt(st.nextToken());
         int X = Integer.parseInt(st.nextToken());
 
-        dist = new int[N + 1][N + 1];
-        for (int i = 0; i <= N; i ++) {
-            for (int j = 0; j <= N; j ++) {
-                dist[i][j] = Integer.MAX_VALUE;
-            }
-        }
-
         List<List<Node>> city = new ArrayList<>();
-        for (int i = 0; i <= N; i ++) {
+        for (int i = 0; i <= N; i++) {
             city.add(new ArrayList<>());
         }
 
-        for (int i = 0; i < M; i ++) {
+        for (int i = 0; i < M; i++) {
             st = new StringTokenizer(br.readLine());
             int start = Integer.parseInt(st.nextToken());
             int dest = Integer.parseInt(st.nextToken());
@@ -49,13 +40,7 @@ public class Main {
             city.get(start).add(new Node(dest, cost));
         }
 
-        int[] toX = new int[N + 1];
-        int[] fromX = new int[N + 1];
-
-        Arrays.fill(toX, Integer.MAX_VALUE);
-        Arrays.fill(fromX, Integer.MAX_VALUE);
-
-        dijkstra(city, toX, X);
+        int[] toX = dijkstra(city, N, X);
 
         List<List<Node>> reverseCity = new ArrayList<>();
         for (int i = 0; i <= N; i++) {
@@ -66,7 +51,8 @@ public class Main {
                 reverseCity.get(node.node).add(new Node(i, node.cost));
             }
         }
-        dijkstra(reverseCity, fromX, X);
+
+        int[] fromX = dijkstra(reverseCity, N, X);
 
         int max = 0;
         for (int i = 1; i <= N; i++) {
@@ -76,26 +62,30 @@ public class Main {
         System.out.println(max);
     }
 
-    private static void dijkstra(List<List<Node>> city, int[] dist,int start) {
-        PriorityQueue<Node> q = new PriorityQueue<>();
-        boolean[] isVisit = new boolean[dist.length];
+    private static int[] dijkstra(List<List<Node>> graph, int n, int start) {
+        PriorityQueue<Node> pq = new PriorityQueue<>();
+        int[] dist = new int[n + 1];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        boolean[] visited = new boolean[n + 1];
+
         dist[start] = 0;
-        q.offer(new Node(start,0));
+        pq.offer(new Node(start, 0));
 
-        while (!q.isEmpty()) {
-            Node curNode = q.poll();
-            int cur = curNode.node;
+        while (!pq.isEmpty()) {
+            Node current = pq.poll();
+            int curNode = current.node;
 
-            if (!isVisit[cur]) {
-                isVisit[cur] = true;
+            if (visited[curNode]) continue;
+            visited[curNode] = true;
 
-                for (Node node : city.get(cur)) {
-                    if (!isVisit[node.node] && dist[node.node] > dist[cur] + node.cost) {
-                        dist[node.node] = dist[cur] + node.cost;
-                        q.offer(new Node(node.node, dist[node.node]));
-                    }
+            for (Node neighbor : graph.get(curNode)) {
+                if (dist[neighbor.node] > dist[curNode] + neighbor.cost) {
+                    dist[neighbor.node] = dist[curNode] + neighbor.cost;
+                    pq.offer(new Node(neighbor.node, dist[neighbor.node]));
                 }
             }
         }
+
+        return dist;
     }
 }
