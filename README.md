@@ -55,6 +55,5 @@
 | 10 | 2024-06-06 | [트리 순회](https://www.acmicpc.net/problem/1991) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 11 | 2024-06-07 | [팩토리얼](https://www.acmicpc.net/problem/10872) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 12 | 2024.06.08 | [숨바꼭질 3](https://www.acmicpc.net/problem/13549) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
-
 | 13 | 2024.06.08 | [알고스팟](https://www.acmicpc.net/problem/1261) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 14 | 2024.06.09 | [미로만들기](https://www.acmicpc.net/problem/2665) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
