@@ -106,7 +106,7 @@ const updateReadme = async () => {
     }
     else {
         const newTableRow = `| ${+curIdx + 1} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
-        curContent = curContent + "\n" + newTableRow + "\n";
+        curContent = curContent + newTableRow + "\n";
         content = defaultDiv + detailsContent + curContent;
         console.log(content);
     }
