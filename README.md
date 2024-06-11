@@ -60,3 +60,4 @@
 | 15 | 2024.06.09 | [파티](https://www.acmicpc.net/problem/1238) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 16 | 2024.06.09 | [파티](https://www.acmicpc.net/problem/1238) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 17 | 2024.06.10 | [트리의 지름](https://www.acmicpc.net/problem/1167) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
+| 18 | 2024.06.11 | [최단경로](https://www.acmicpc.net/problem/1753) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
