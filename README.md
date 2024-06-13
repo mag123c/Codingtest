@@ -61,6 +61,6 @@
 | 16 | 2024.06.09 | [파티](https://www.acmicpc.net/problem/1238) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 17 | 2024.06.10 | [트리의 지름](https://www.acmicpc.net/problem/1167) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
 | 18 | 2024.06.11 | [최단경로](https://www.acmicpc.net/problem/1753) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
-| 19 | 2024.06.13 | [가장 긴 증가하는 부분 수열 2](https://www.acmicpc.net/problem/12015) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
-| 20 | 2024.06.13 | [가장 긴 증가하는 부분 수열 3](https://www.acmicpc.net/problem/12738) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
-| 21 | 2024.06.13 | [가장 긴 증가하는 부분 수열 4](https://www.acmicpc.net/problem/14002) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 19 | 2024.06.12 | [가장 긴 증가하는 부분 수열 2](https://www.acmicpc.net/problem/12015) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
+| 20 | 2024.06.12 | [가장 긴 증가하는 부분 수열 3](https://www.acmicpc.net/problem/12738) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
+| 21 | 2024.06.12 | [가장 긴 증가하는 부분 수열 4](https://www.acmicpc.net/problem/14002) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
