@@ -64,3 +64,4 @@
 | 19 | 2024.06.12 | [가장 긴 증가하는 부분 수열 2](https://www.acmicpc.net/problem/12015) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
 | 20 | 2024.06.12 | [가장 긴 증가하는 부분 수열 3](https://www.acmicpc.net/problem/12738) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
 | 21 | 2024.06.12 | [가장 긴 증가하는 부분 수열 4](https://www.acmicpc.net/problem/14002) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 22 | 2024.06.13 | [트리의 지름](https://www.acmicpc.net/problem/1167) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
