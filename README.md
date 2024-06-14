@@ -66,3 +66,4 @@
 | 21 | 2024.06.12 | [가장 긴 증가하는 부분 수열 4](https://www.acmicpc.net/problem/14002) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 22 | 2024.06.13 | [트리의 지름](https://www.acmicpc.net/problem/1167) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 23 | 2024.06.14 | [타임머신](https://www.acmicpc.net/problem/1440) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 24 | 2024.06.14 | [웜홀](https://www.acmicpc.net/problem/1865) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
