@@ -69,3 +69,4 @@
 | 23 | 2024.06.14 | [타임머신](https://www.acmicpc.net/problem/1440) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 24 | 2024.06.14 | [웜홀](https://www.acmicpc.net/problem/1865) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 25 | 2024.06.15 | [벽 부수고 이동하기](https://www.acmicpc.net/problem/2206) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
+| 26 | 2024.06.16 | [플로이드](https://www.acmicpc.net/problem/6091) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
