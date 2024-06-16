@@ -73,3 +73,4 @@
 | 27 | 2024.06.16 | [TV 크기](https://www.acmicpc.net/problem/1297) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
 | 28 | 2024.06.16 | [오각형, 오각형, 오각형…](https://www.acmicpc.net/problem/1964) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
 | 29 | 2024.06.16 | [평점 변환](https://www.acmicpc.net/problem/31799) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
+| 30 | 2024.06.16 | [Trip Odometer](https://www.acmicpc.net/problem/2765) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
