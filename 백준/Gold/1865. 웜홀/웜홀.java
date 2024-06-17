@@ -17,7 +17,7 @@ public class Main {
 
     private static ArrayList<Edge> edgeList = new ArrayList<>();
     private static int[] dist;
-    static final int INF = 987654321;
+    private static final int INF = Integer.MAX_VALUE;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -32,7 +32,6 @@ public class Main {
             int W = Integer.parseInt(st.nextToken());
 
             dist = new int[N + 1];
-            Arrays.fill(dist, INF);
             edgeList.clear();
 
             for (int j = 0; j < M; j++) {
@@ -51,9 +50,16 @@ public class Main {
                 edgeList.add(new Edge(S, E, -T));
             }
 
-            if (bellmanFord(1, N)) {
-                bw.write("YES\n");
-            } else {
+            boolean isYes = false;
+            for (int j = 1; j <= N; j++) {
+                if (bellmanFord(j, N)) {
+                    bw.write("YES\n");
+                    isYes = true;
+                    break;
+                }
+            }
+
+            if (!isYes) {
                 bw.write("NO\n");
             }
         }
@@ -63,24 +69,29 @@ public class Main {
     }
 
     private static boolean bellmanFord(int start, int N) {
+        Arrays.fill(dist, INF);
         dist[start] = 0;
 
         // N-1번의 릴렉세이션(relaxation) 수행
         for (int i = 1; i < N; i++) {
+            boolean updated = false;
             for (Edge edge : edgeList) {
-                if (dist[edge.to] > dist[edge.from] + edge.cost) {
+                if (dist[edge.from] != INF && dist[edge.to] > dist[edge.from] + edge.cost) {
                     dist[edge.to] = dist[edge.from] + edge.cost;
+                    updated = true;
                 }
             }
+            // 만약 이번 반복에서 업데이트가 없으면 종료
+            if (!updated) break;
         }
 
         // 추가 릴렉세이션으로 음수 사이클 검증
         for (Edge edge : edgeList) {
-            if (dist[edge.to] > dist[edge.from] + edge.cost) {
+            if (dist[edge.from] != INF && dist[edge.to] > dist[edge.from] + edge.cost) {
                 return true; // 음수 사이클 존재
             }
         }
 
-        return false; // 음수 사이클 존재하지 않음
+        return false;
     }
 }
