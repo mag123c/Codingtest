@@ -77,3 +77,4 @@
 | 31 | 2024.06.16 | [차집합](https://www.acmicpc.net/problem/1269) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 32 | 2024.06.16 | [회전하는 큐](https://www.acmicpc.net/problem/1021) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 33 | 2024.06.17 | [tomo](https://www.acmicpc.net/problem/1172) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
+| 34 | 2024.06.17 | [생태학](https://www.acmicpc.net/problem/4358) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
