@@ -81,3 +81,4 @@
 | 35 | 2024.06.17 | [웜홀](https://www.acmicpc.net/problem/1865) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 36 | 2024.06.18 | [후위 표기식](https://www.acmicpc.net/problem/1918) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
 | 37 | 2024.06.19 | [내려가기](https://www.acmicpc.net/problem/2096) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 38 | 2024.06.20 | [치킨 배달](https://www.acmicpc.net/problem/15686) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
