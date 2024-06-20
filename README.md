@@ -82,3 +82,4 @@
 | 36 | 2024.06.18 | [후위 표기식](https://www.acmicpc.net/problem/1918) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
 | 37 | 2024.06.19 | [내려가기](https://www.acmicpc.net/problem/2096) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 38 | 2024.06.20 | [치킨 배달](https://www.acmicpc.net/problem/15686) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 39 | 2024.06.20 | [파이프 옮기기 1](https://www.acmicpc.net/problem/17070) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
