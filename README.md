@@ -83,3 +83,4 @@
 | 37 | 2024.06.19 | [내려가기](https://www.acmicpc.net/problem/2096) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 38 | 2024.06.20 | [치킨 배달](https://www.acmicpc.net/problem/15686) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 39 | 2024.06.20 | [파이프 옮기기 1](https://www.acmicpc.net/problem/17070) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 40 | 2024.06.21 | [전깃줄 - 2](https://www.acmicpc.net/problem/1365) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/16.svg" /></div> |
