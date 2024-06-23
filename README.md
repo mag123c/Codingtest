@@ -86,3 +86,4 @@
 | 40 | 2024.06.21 | [전깃줄 - 2](https://www.acmicpc.net/problem/1365) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/16.svg" /></div> |
 | 41 | 2024.06.22 | [알파벳](https://www.acmicpc.net/problem/1262) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 42 | 2024.06.23 | [별 찍기 - 11](https://www.acmicpc.net/problem/2438) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 43 | 2024.06.23 | [문자열 폭발](https://www.acmicpc.net/problem/9935) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
