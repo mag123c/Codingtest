@@ -89,3 +89,4 @@
 | 43 | 2024.06.23 | [문자열 폭발](https://www.acmicpc.net/problem/9935) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 44 | 2024.06.24 | [이진 검색 트리](https://www.acmicpc.net/problem/1539) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 45 | 2024.06.24 | [치즈](https://www.acmicpc.net/problem/2636) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
+| 46 | 2024.06.25 | [숨바꼭질 2](https://www.acmicpc.net/problem/12851) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
