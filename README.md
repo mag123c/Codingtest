@@ -92,3 +92,4 @@
 | 46 | 2024.06.25 | [숨바꼭질 2](https://www.acmicpc.net/problem/12851) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 47 | 2024.06.26 | [제리와 톰](https://www.acmicpc.net/problem/16430) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
 | 48 | 2024.06.26 | [조교는 새디스트야!!](https://www.acmicpc.net/problem/14656) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
+| 49 | 2024.06.26 | [미아 노트](https://www.acmicpc.net/problem/20114) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
