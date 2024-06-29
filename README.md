@@ -94,3 +94,4 @@
 | 48 | 2024.06.26 | [조교는 새디스트야!!](https://www.acmicpc.net/problem/14656) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 49 | 2024.06.26 | [미아 노트](https://www.acmicpc.net/problem/20114) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 50 | 2024.06.28 | [멘토와 멘티](https://www.acmicpc.net/problem/26265) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
+| 51 | 2024.06.29 | [단어 개수 세기](https://www.acmicpc.net/problem/19844) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
