@@ -97,3 +97,4 @@
 | 51 | 2024.06.29 | [단어 개수 세기](https://www.acmicpc.net/problem/19844) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 52 | 2024.06.29 | [재귀함수가 뭔가요?](https://www.acmicpc.net/problem/17478) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 53 | 2024.06.29 | [뒤집어진 소수](https://www.acmicpc.net/problem/10859) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
+| 54 | 2024.06.30 | [스케이트 연습](https://www.acmicpc.net/problem/28324) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
