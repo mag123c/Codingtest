@@ -42,6 +42,8 @@
 | 35 | 2024-05-31 | [헌내기는 친구가 필요해](https://www.acmicpc.net/problem/21736) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 </details>
 
+<details>
+<summary>2024.06 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024-06-01 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
@@ -99,3 +101,10 @@
 | 53 | 2024.06.29 | [뒤집어진 소수](https://www.acmicpc.net/problem/10859) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 | 54 | 2024.06.30 | [스케이트 연습](https://www.acmicpc.net/problem/28324) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 55 | 2024.06.30 | [스케이트 연습](https://www.acmicpc.net/problem/28324) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
+
+</details>
+
+
+| #  | 날짜 | 문제 | 난이도 |
+|:---:|:---:|:---:|:---:|
+| 1 | 2024.07.01 | [부당한 퍼즐](https://www.acmicpc.net/problem/15501) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
