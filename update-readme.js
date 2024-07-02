@@ -40,7 +40,8 @@ const getDifficultyIconPath = (level) => {
 };
 
 const getCommitMessages = () => {    
-    const output = execSync('git log -1 --pretty=%B').toString().trim();
+    const output = '[Gold IV] Title: 서강그라운드, Time: 108 ms, Memory: 14628 KB -BaekjoonHub'.trim();
+    // const output = execSync('git log -1 --pretty=%B').toString().trim();
     if (!output.includes('-BaekjoonHub')) {
         console.error('This commit is not from BaekjoonHub.');
         process.exit(1);
@@ -83,7 +84,7 @@ const updateReadme = async () => {
         content = fs.readFileSync(readmePath, 'utf8');
     }
 
-    let curContent = content.replace(/<details[\s\S]*?<\/details>/gi, '').split("\n\n\n\n")[1];
+    let curContent = content.replace(/<details[\s\S]*?<\/details>/gi, '').replace('<div align="center">', '').replace("\n", '').trim();
 
     const detailsRegex = /<details[\s\S]*?<\/details>/gi;
     let detailsContent = content.match(detailsRegex) || [];
@@ -93,6 +94,7 @@ const updateReadme = async () => {
 
     const curDate = parseLastDate(curContent);
     const curIdx = parseLastIdx(curContent);
+
     const tableHeader = `
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
@@ -115,9 +117,7 @@ const updateReadme = async () => {
 };
 
 function parseLastDate(content) {
-    const lines = content.split('\n').filter(line => line.trim() !== '');
-    console.log(lines);
-    console.log(content);
+    const lines = content.split("\n");
     return lines[lines.length - 1].split("|")[2].trim();
 }
 
