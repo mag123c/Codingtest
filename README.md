@@ -109,3 +109,4 @@
 | 1 | 2024.07.01 | [부당한 퍼즐](https://www.acmicpc.net/problem/15501) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 | 2 | 2024.07.01 | [최소비용 구하기 2](https://www.acmicpc.net/problem/11779) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 3 | 2024.07.02 | [서강그라운드](https://www.acmicpc.net/problem/14938) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 4 | 2024.07.02 | [미세먼지 안녕!](https://www.acmicpc.net/problem/17144) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
