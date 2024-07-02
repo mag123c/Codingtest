@@ -42,7 +42,7 @@
 | 35 | 2024-05-31 | [헌내기는 친구가 필요해](https://www.acmicpc.net/problem/21736) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 </details>
 
-<details>
+,<details>
 <summary>2024.06 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
@@ -104,10 +104,7 @@
 
 </details>
 
-
-
-
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024.07.01 | [부당한 퍼즐](https://www.acmicpc.net/problem/15501) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
-| 2 | 2024.07.01 | [최소비용 구하기 2](https://www.acmicpc.net/problem/11779) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
+| 2 | 2024.07.01 | [최소비용 구하기 2](https://www.acmicpc.net/problem/11779) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> || 3 | 2024.07.02 | [서강그라운드](https://www.acmicpc.net/problem/14938) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
