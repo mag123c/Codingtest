@@ -42,7 +42,7 @@
 | 35 | 2024-05-31 | [헌내기는 친구가 필요해](https://www.acmicpc.net/problem/21736) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 </details>
 
-,<details>
+<details>
 <summary>2024.06 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
