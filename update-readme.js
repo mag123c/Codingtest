@@ -116,6 +116,8 @@ const updateReadme = async () => {
 
 function parseLastDate(content) {
     const lines = content.split('\n').filter(line => line.trim() !== '');
+    console.log(lines);
+    console.log(content);
     return lines[lines.length - 1].split("|")[2].trim();
 }
 
