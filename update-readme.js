@@ -40,8 +40,7 @@ const getDifficultyIconPath = (level) => {
 };
 
 const getCommitMessages = () => {    
-    const output = '[Gold IV] Title: 서강그라운드, Time: 108 ms, Memory: 14628 KB -BaekjoonHub'.trim();
-    // const output = execSync('git log -1 --pretty=%B').toString().trim();
+    const output = execSync('git log -1 --pretty=%B').toString().trim();
     if (!output.includes('-BaekjoonHub')) {
         console.error('This commit is not from BaekjoonHub.');
         process.exit(1);
@@ -87,9 +86,12 @@ const updateReadme = async () => {
     let curContent = content.replace(/<details[\s\S]*?<\/details>/gi, '').replace('<div align="center">', '').replace("\n", '').trim();
 
     const detailsRegex = /<details[\s\S]*?<\/details>/gi;
-    let detailsContent = content.match(detailsRegex) || [];
-    if (detailsContent.length > 0) {
-        detailsContent = detailsContent.map(detail => `${detail}\n\n`);
+    let details = content.match(detailsRegex) || [];
+    let detailsContent = "";
+    if (details.length > 0) {
+        for (const d of details) {
+            detailsContent += `${d}\n\n`;
+        }
     }
 
     const curDate = parseLastDate(curContent);
@@ -100,17 +102,19 @@ const updateReadme = async () => {
 |:---:|:---:|:---:|:---:|
 `;
 
+    //월갱신
     if (newEntry.date.slice(5, 7) != curDate.slice(5, 7)) {
         const updateContent = `<details>\n<summary>${curDate.slice(0, 7)} 풀이 목록</summary>\n${curContent}\n</details>\n\n`;
         const newTableRow = `| ${1} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
 
         content = defaultDiv + detailsContent + updateContent + tableHeader + newTableRow + "\n";
     }
+
+    //기존
     else {
         const newTableRow = `| ${+curIdx + 1} | ${newEntry.date} | [${newEntry.title}](${problemLink}) | ${getDifficultyIconPath(newEntry.level)} |`;
-        curContent = curContent + newTableRow + "\n";
+        curContent = curContent + "\n" + newTableRow;
         content = defaultDiv + detailsContent + curContent;
-        console.log(content);
     }
 
     fs.writeFileSync(readmePath, content);
