@@ -113,3 +113,4 @@
 | 5 | 2024.07.03 | [아기 상어](https://www.acmicpc.net/problem/16236) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 6 | 2024.07.04 | [가변 배열](https://www.acmicpc.net/problem/29729) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 7 | 2024.07.05 | [돌 게임](https://www.acmicpc.net/problem/9655) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
+| 8 | 2024.07.05 | [Base Conversion](https://www.acmicpc.net/problem/6361) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
