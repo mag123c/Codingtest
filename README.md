@@ -114,3 +114,4 @@
 | 6 | 2024.07.04 | [가변 배열](https://www.acmicpc.net/problem/29729) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 7 | 2024.07.05 | [돌 게임](https://www.acmicpc.net/problem/9655) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 8 | 2024.07.05 | [Base Conversion](https://www.acmicpc.net/problem/6361) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
+| 9 | 2024.07.05 | [에라토스테네스의 체](https://www.acmicpc.net/problem/2960) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
