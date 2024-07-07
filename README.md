@@ -116,3 +116,4 @@
 | 8 | 2024.07.05 | [Base Conversion](https://www.acmicpc.net/problem/6361) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 9 | 2024.07.05 | [에라토스테네스의 체](https://www.acmicpc.net/problem/2960) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 10 | 2024.07.06 | [피카츄가 낸 어려운 문제](https://www.acmicpc.net/problem/16488) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
+| 11 | 2024.07.07 | [꿍의 여친 만들기](https://www.acmicpc.net/problem/11101) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
