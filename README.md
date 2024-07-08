@@ -117,3 +117,4 @@
 | 9 | 2024.07.05 | [에라토스테네스의 체](https://www.acmicpc.net/problem/2960) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 10 | 2024.07.06 | [피카츄가 낸 어려운 문제](https://www.acmicpc.net/problem/16488) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 11 | 2024.07.07 | [꿍의 여친 만들기](https://www.acmicpc.net/problem/11101) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
+| 12 | 2024.07.08 | [연구소](https://www.acmicpc.net/problem/14502) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
