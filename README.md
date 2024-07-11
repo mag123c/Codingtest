@@ -121,3 +121,4 @@
 | 13 | 2024.07.09 | [Σ](https://www.acmicpc.net/problem/13172) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 14 | 2024.07.10 | [조별과제를 하려는데 조장이 사라졌다](https://www.acmicpc.net/problem/15727) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
 | 15 | 2024.07.10 | [공 포장하기](https://www.acmicpc.net/problem/12981) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
+| 16 | 2024.07.11 | [프로그래밍 대회 전용 부지](https://www.acmicpc.net/problem/9414) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
