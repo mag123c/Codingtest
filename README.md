@@ -124,3 +124,4 @@
 | 16 | 2024.07.11 | [프로그래밍 대회 전용 부지](https://www.acmicpc.net/problem/9414) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 17 | 2024.07.11 | [별 찍기 - 19](https://www.acmicpc.net/problem/2438) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 18 | 2024.07.12 | [최소 스패닝 트리](https://www.acmicpc.net/problem/1197) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 19 | 2024.07.13 | [집합의 표현](https://www.acmicpc.net/problem/1717) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
