@@ -127,3 +127,4 @@
 | 19 | 2024.07.13 | [집합의 표현](https://www.acmicpc.net/problem/1717) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 20 | 2024.07.14 | [여행 가자](https://www.acmicpc.net/problem/1976) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 21 | 2024.07.14 | [친구 네트워크](https://www.acmicpc.net/problem/4195) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
+| 22 | 2024.07.14 | [사이클 게임](https://www.acmicpc.net/problem/20040) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
