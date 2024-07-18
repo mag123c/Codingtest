@@ -131,3 +131,4 @@
 | 23 | 2024.07.15 | [상근이의 여행](https://www.acmicpc.net/problem/9372) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 24 | 2024.07.16 | [약수들의 합](https://www.acmicpc.net/problem/9506) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 25 | 2024.07.17 | [전력난](https://www.acmicpc.net/problem/6497) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 26 | 2024.07.18 | [우주신과의 교감](https://www.acmicpc.net/problem/1774) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
