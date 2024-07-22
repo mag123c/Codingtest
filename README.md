@@ -135,3 +135,4 @@
 | 27 | 2024.07.19 | [별자리 만들기](https://www.acmicpc.net/problem/4386) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 28 | 2024.07.20 | [다리 만들기 2](https://www.acmicpc.net/problem/17472) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/15.svg" /></div> |
 | 29 | 2024.07.21 | [수 나누기 게임](https://www.acmicpc.net/problem/27172) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 30 | 2024.07.22 | [ACM Craft](https://www.acmicpc.net/problem/1005) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
