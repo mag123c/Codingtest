@@ -139,3 +139,4 @@
 | 31 | 2024.07.23 | [다각형의 면적](https://www.acmicpc.net/problem/2166) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 32 | 2024.07.24 | [트리와 쿼리](https://www.acmicpc.net/problem/1921) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 33 | 2024.07.25 | [삼각형](https://www.acmicpc.net/problem/1061) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
+| 34 | 2024.07.26 | [도시 분할 계획](https://www.acmicpc.net/problem/1647) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
