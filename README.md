@@ -142,3 +142,4 @@
 | 34 | 2024.07.26 | [도시 분할 계획](https://www.acmicpc.net/problem/1647) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 35 | 2024.07.27 | [새](https://www.acmicpc.net/problem/1424) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
 | 36 | 2024.07.28 | [보석 도둑](https://www.acmicpc.net/problem/1202) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
+| 37 | 2024.07.28 | [소수의 연속합](https://www.acmicpc.net/problem/1644) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
