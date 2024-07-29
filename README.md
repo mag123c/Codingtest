@@ -144,3 +144,4 @@
 | 36 | 2024.07.28 | [보석 도둑](https://www.acmicpc.net/problem/1202) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
 | 37 | 2024.07.28 | [소수의 연속합](https://www.acmicpc.net/problem/1644) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 38 | 2024.07.29 | [두 배열의 합](https://www.acmicpc.net/problem/2143) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
+| 39 | 2024.07.29 | [문제집](https://www.acmicpc.net/problem/1766) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
