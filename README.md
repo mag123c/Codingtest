@@ -147,3 +147,4 @@
 | 39 | 2024.07.29 | [문제집](https://www.acmicpc.net/problem/1766) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
 | 40 | 2024.07.30 | [스도쿠](https://www.acmicpc.net/problem/1840) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 41 | 2024.07.30 | [줄 세우기](https://www.acmicpc.net/problem/1681) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
+| 42 | 2024.07.31 | [LCS 2](https://www.acmicpc.net/problem/9252) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
