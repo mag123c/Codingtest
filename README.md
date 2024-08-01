@@ -104,6 +104,8 @@
 
 </details>
 
+<details>
+<summary>2024.07 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024.07.01 | [부당한 퍼즐](https://www.acmicpc.net/problem/15501) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
@@ -148,3 +150,9 @@
 | 40 | 2024.07.30 | [스도쿠](https://www.acmicpc.net/problem/1840) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 41 | 2024.07.30 | [줄 세우기](https://www.acmicpc.net/problem/1681) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 42 | 2024.07.31 | [LCS 2](https://www.acmicpc.net/problem/9252) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+</details>
+
+
+| #  | 날짜 | 문제 | 난이도 |
+|:---:|:---:|:---:|:---:|
+| 1 | 2024.08.01 | [텀 프로젝트](https://www.acmicpc.net/problem/9466) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
