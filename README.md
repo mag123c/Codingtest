@@ -157,3 +157,4 @@
 | 1 | 2024.08.01 | [텀 프로젝트](https://www.acmicpc.net/problem/9466) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 2 | 2024.08.01 | [음악프로그램](https://www.acmicpc.net/problem/2623) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 3 | 2024.08.02 | [HI-ARC=?](https://www.acmicpc.net/problem/1172) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
+| 4 | 2024.08.03 | [RGB거리 2](https://www.acmicpc.net/problem/17404) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
