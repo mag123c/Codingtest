@@ -44,6 +44,7 @@
 
 <details>
 <summary>2024.06 풀이 목록</summary>
+  
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024-06-01 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
@@ -106,6 +107,7 @@
 
 <details>
 <summary>2024.07 풀이 목록</summary>
+  
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024.07.01 | [부당한 퍼즐](https://www.acmicpc.net/problem/15501) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
