@@ -161,3 +161,4 @@
 | 3 | 2024.08.02 | [HI-ARC=?](https://www.acmicpc.net/problem/1172) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
 | 4 | 2024.08.03 | [RGB거리 2](https://www.acmicpc.net/problem/17404) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 5 | 2024.08.04 | [팰린드롬?](https://www.acmicpc.net/problem/10942) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 6 | 2024.08.04 | [할로윈의 양아치](https://www.acmicpc.net/problem/20303) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
