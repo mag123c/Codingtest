@@ -165,3 +165,4 @@
 | 7 | 2024.08.04 | [피리 부는 사나이](https://www.acmicpc.net/problem/16724) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 8 | 2024.08.04 | [표 편집](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 | 9 | 2024.08.05 | [부분 문자열](https://www.acmicpc.net/problem/1479) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
+| 10 | 2024.08.06 | [상품의 주인은?](https://www.acmicpc.net/problem/24509) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
