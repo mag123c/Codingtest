@@ -167,3 +167,4 @@
 | 9 | 2024.08.05 | [부분 문자열](https://www.acmicpc.net/problem/1479) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 10 | 2024.08.06 | [상품의 주인은?](https://www.acmicpc.net/problem/24509) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 11 | 2024.08.07 | [소수](https://www.acmicpc.net/problem/1017) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
+| 12 | 2024.08.09 | [The candy war](https://www.acmicpc.net/problem/9037) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
