@@ -169,3 +169,4 @@
 | 11 | 2024.08.07 | [소수](https://www.acmicpc.net/problem/1017) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
 | 12 | 2024.08.09 | [The candy war](https://www.acmicpc.net/problem/9037) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 13 | 2024.08.10 | [피보나치 더하기](https://www.acmicpc.net/problem/30824) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
+| 14 | 2024.08.10 | [아침 태권도](https://www.acmicpc.net/problem/29197) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
