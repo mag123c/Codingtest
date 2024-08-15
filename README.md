@@ -172,3 +172,4 @@
 | 14 | 2024.08.10 | [아침 태권도](https://www.acmicpc.net/problem/29197) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 | 15 | 2024.08.11 | [행렬 곱셈 순서](https://www.acmicpc.net/problem/11049) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 16 | 2024.08.13 | [창고지기](https://www.acmicpc.net/problem/31844) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
+| 17 | 2024.08.15 | [새로운 달력 (Small)](https://www.acmicpc.net/problem/12437) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
