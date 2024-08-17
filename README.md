@@ -176,3 +176,4 @@
 | 18 | 2024.08.16 | [옷걸이](https://www.acmicpc.net/problem/23816) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 19 | 2024.08.16 | [Contact](https://www.acmicpc.net/problem/1013) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 20 | 2024.08.16 | [제곱수 찾기](https://www.acmicpc.net/problem/1025) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 21 | 2024.08.17 | [물병](https://www.acmicpc.net/problem/1052) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
