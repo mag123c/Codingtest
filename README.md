@@ -180,3 +180,4 @@
 | 22 | 2024.08.18 | [차트](https://www.acmicpc.net/problem/1239) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 23 | 2024.08.19 | [색칠 1](https://www.acmicpc.net/problem/1117) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 24 | 2024.08.20 | [단어 만들기](https://www.acmicpc.net/problem/1148) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 25 | 2024.08.22 | [언더프라임](https://www.acmicpc.net/problem/1124) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
