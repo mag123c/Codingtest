@@ -182,3 +182,4 @@
 | 24 | 2024.08.20 | [단어 만들기](https://www.acmicpc.net/problem/1148) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 25 | 2024.08.22 | [언더프라임](https://www.acmicpc.net/problem/1124) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 26 | 2024.08.23 | [다음 팰린드롬 수](https://www.acmicpc.net/problem/1334) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 27 | 2024.08.24 | [부분 삼각 수열](https://www.acmicpc.net/problem/1548) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
