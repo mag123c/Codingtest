@@ -185,3 +185,4 @@
 | 27 | 2024.08.24 | [부분 삼각 수열](https://www.acmicpc.net/problem/1548) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 28 | 2024.08.25 | [IBM 빼기 1](https://www.acmicpc.net/problem/6321) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 29 | 2024.08.26 | [직각삼각형](https://www.acmicpc.net/problem/1711) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 30 | 2024.08.27 | [수열의 합](https://www.acmicpc.net/problem/1024) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
