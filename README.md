@@ -187,3 +187,4 @@
 | 29 | 2024.08.26 | [직각삼각형](https://www.acmicpc.net/problem/1711) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 30 | 2024.08.27 | [수열의 합](https://www.acmicpc.net/problem/1024) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 | 31 | 2024.08.28 | [SciComLove (2024)](https://www.acmicpc.net/problem/31746) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/2.svg" /></div> |
+| 32 | 2024.08.28 | [2018 연세대학교 프로그래밍 경진대회](https://www.acmicpc.net/problem/15667) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
