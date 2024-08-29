@@ -191,3 +191,4 @@
 | 33 | 2024.08.28 | [뒤집힌 덧셈](https://www.acmicpc.net/problem/1357) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 34 | 2024.08.29 | [디지털시계](https://www.acmicpc.net/problem/1942) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 35 | 2024.08.29 | [UCPC는 무엇의 약자일까?](https://www.acmicpc.net/problem/15904) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
+| 36 | 2024.08.29 | [인공 원소](https://www.acmicpc.net/problem/26162) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
