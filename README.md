@@ -189,3 +189,4 @@
 | 31 | 2024.08.28 | [SciComLove (2024)](https://www.acmicpc.net/problem/31746) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/2.svg" /></div> |
 | 32 | 2024.08.28 | [2018 연세대학교 프로그래밍 경진대회](https://www.acmicpc.net/problem/15667) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 33 | 2024.08.28 | [뒤집힌 덧셈](https://www.acmicpc.net/problem/1357) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
+| 34 | 2024.08.29 | [디지털시계](https://www.acmicpc.net/problem/1942) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
