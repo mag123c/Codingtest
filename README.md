@@ -190,3 +190,4 @@
 | 32 | 2024.08.28 | [2018 연세대학교 프로그래밍 경진대회](https://www.acmicpc.net/problem/15667) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 33 | 2024.08.28 | [뒤집힌 덧셈](https://www.acmicpc.net/problem/1357) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 34 | 2024.08.29 | [디지털시계](https://www.acmicpc.net/problem/1942) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
+| 35 | 2024.08.29 | [UCPC는 무엇의 약자일까?](https://www.acmicpc.net/problem/15904) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
