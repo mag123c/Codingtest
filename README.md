@@ -154,6 +154,8 @@
 | 42 | 2024.07.31 | [LCS 2](https://www.acmicpc.net/problem/9252) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 </details>
 
+<details>
+<summary>2024.08 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024.08.01 | [텀 프로젝트](https://www.acmicpc.net/problem/9466) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
@@ -194,3 +196,9 @@
 | 36 | 2024.08.29 | [인공 원소](https://www.acmicpc.net/problem/26162) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 37 | 2024.08.30 | [간판](https://www.acmicpc.net/problem/5534) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 38 | 2024.08.31 | [부분수열의 합](https://www.acmicpc.net/problem/1182) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
+</details>
+
+
+| #  | 날짜 | 문제 | 난이도 |
+|:---:|:---:|:---:|:---:|
+| 1 | 2024.09.01 | [트리 긋기](https://www.acmicpc.net/problem/29757) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
