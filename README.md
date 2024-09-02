@@ -198,7 +198,7 @@
 | 38 | 2024.08.31 | [부분수열의 합](https://www.acmicpc.net/problem/1182) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 </details>
 
-
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024.09.01 | [트리 긋기](https://www.acmicpc.net/problem/29757) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
+| 2 | 2024.09.02 | [숫자 정사각형](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
