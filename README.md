@@ -205,3 +205,4 @@
 | 3 | 2024.09.02 | [터렛](https://www.acmicpc.net/problem/1002) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 4 | 2024.09.04 | [11월 11일](https://www.acmicpc.net/problem/25286) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 5 | 2024.09.04 | [날짜 계산](https://www.acmicpc.net/problem/1476) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
+| 6 | 2024.09.05 | [트리 만들기](https://www.acmicpc.net/problem/1839) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
