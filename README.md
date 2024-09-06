@@ -206,3 +206,4 @@
 | 4 | 2024.09.04 | [11월 11일](https://www.acmicpc.net/problem/25286) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 5 | 2024.09.04 | [날짜 계산](https://www.acmicpc.net/problem/1476) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 6 | 2024.09.05 | [트리 만들기](https://www.acmicpc.net/problem/1839) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
+| 7 | 2024.09.06 | [야근](https://www.acmicpc.net/problem/14402) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
