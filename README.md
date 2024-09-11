@@ -208,3 +208,4 @@
 | 6 | 2024.09.05 | [트리 만들기](https://www.acmicpc.net/problem/1839) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 7 | 2024.09.06 | [야근](https://www.acmicpc.net/problem/14402) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 8 | 2024.09.09 | [감소하는 수](https://www.acmicpc.net/problem/1038) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 9 | 2024.09.11 | [나부 함대 데이터](https://www.acmicpc.net/problem/9654) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
