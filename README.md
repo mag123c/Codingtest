@@ -213,3 +213,4 @@
 | 11 | 2024.09.13 | [나이트 투어](https://www.acmicpc.net/problem/1331) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 12 | 2024.09.13 | [숫자세는 양 (Large)](https://www.acmicpc.net/problem/14382) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 13 | 2024.09.14 | [고층 건물](https://www.acmicpc.net/problem/1027) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 14 | 2024.09.15 | [램프](https://www.acmicpc.net/problem/1034) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
