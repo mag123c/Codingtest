@@ -214,3 +214,4 @@
 | 12 | 2024.09.13 | [숫자세는 양 (Large)](https://www.acmicpc.net/problem/14382) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/7.svg" /></div> |
 | 13 | 2024.09.14 | [고층 건물](https://www.acmicpc.net/problem/1027) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 14 | 2024.09.15 | [램프](https://www.acmicpc.net/problem/1034) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
+| 15 | 2024.09.17 | [Dance Dance Revolution](https://www.acmicpc.net/problem/2342) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
