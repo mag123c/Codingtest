@@ -217,3 +217,4 @@
 | 15 | 2024.09.17 | [Dance Dance Revolution](https://www.acmicpc.net/problem/2342) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
 | 16 | 2024.09.18 | [미로만들기](https://www.acmicpc.net/problem/2665) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/12.svg" /></div> |
 | 17 | 2024.09.19 | [킹](https://www.acmicpc.net/problem/1063) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
+| 18 | 2024.09.20 | [행렬](https://www.acmicpc.net/problem/1080) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
