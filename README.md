@@ -198,6 +198,8 @@
 | 38 | 2024.08.31 | [부분수열의 합](https://www.acmicpc.net/problem/1182) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
 </details>
 
+<details>
+<summary>2024.09 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024.09.01 | [트리 긋기](https://www.acmicpc.net/problem/29757) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
@@ -219,3 +221,9 @@
 | 17 | 2024.09.19 | [킹](https://www.acmicpc.net/problem/1063) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 18 | 2024.09.20 | [행렬](https://www.acmicpc.net/problem/1080) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 | 19 | 2024.09.21 | [팔](https://www.acmicpc.net/problem/1105) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
+</details>
+
+
+| #  | 날짜 | 문제 | 난이도 |
+|:---:|:---:|:---:|:---:|
+| 1 | 2025.01.24 | [최댓값](https://www.acmicpc.net/problem/2357) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
