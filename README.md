@@ -156,6 +156,7 @@
 
 <details>
 <summary>2024.08 풀이 목록</summary>
+  
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024.08.01 | [텀 프로젝트](https://www.acmicpc.net/problem/9466) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/13.svg" /></div> |
@@ -200,6 +201,7 @@
 
 <details>
 <summary>2024.09 풀이 목록</summary>
+  
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2024.09.01 | [트리 긋기](https://www.acmicpc.net/problem/29757) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/9.svg" /></div> |
