@@ -225,7 +225,15 @@
 | 19 | 2024.09.21 | [팔](https://www.acmicpc.net/problem/1105) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/10.svg" /></div> |
 </details>
 
+<details>
+<summary>2025.01 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2025.01.24 | [최댓값](https://www.acmicpc.net/problem/2357) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 2 | 2025.01.24 | [최빈값 구하기](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
+</details>
+
+
+| #  | 날짜 | 문제 | 난이도 |
+|:---:|:---:|:---:|:---:|
+| 1 | 2025.04.19 | [올바른 괄호](https://www.acmicpc.net/problem/3012) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
