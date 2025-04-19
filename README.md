@@ -237,3 +237,4 @@
 |:---:|:---:|:---:|:---:|
 | 1 | 2025.04.19 | [올바른 괄호](https://www.acmicpc.net/problem/3012) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 | 2 | 2025.04.19 | [기능개발](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
+| 3 | 2025.04.19 | [기능개발](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
