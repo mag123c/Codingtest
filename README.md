@@ -239,3 +239,4 @@
 | 2 | 2025.04.19 | [기능개발](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 | 3 | 2025.04.19 | [기능개발](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 | 4 | 2025.04.19 | [기능개발](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
+| 5 | 2025.04.19 | [주식가격](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
