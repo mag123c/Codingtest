@@ -1,34 +1,30 @@
+import java.util.*;
 class Solution {
     public int[] solution(int[] progresses, int[] speeds) {
-       int[] temp = new int[100];  // 최대 작업 갯수
-        int day = 0; // temp에 활용할 day
+                int[] answer = new int[progresses.length];
 
-        // 몇일 만에 몇개가 배포되는지.
-        for(int i=0; i<progresses.length; i++){
-            while(progresses[i] + (speeds[i] * day) < 100){
-                day++;
-            }
-            temp[day]++;
+        // 각 작업 별 걸리는 시간
+        int[] days = new int[progresses.length];
+        for (int i = 0; i < progresses.length; i ++) {
+            days[i] = (int) Math.ceil((100 - progresses[i]) / (double) speeds[i]);
         }
 
-        // temp 배열의 size
-        int count = 0;        
-        for(int n : temp){
-            if(n != 0){
-                count ++; 
-            }
-        }
+        int prev = days[0];
+        int count = 1;
+        int idx = 0;
 
-        int[] answer = new int[count];
-
-        count = 0; 
-        for(int n : temp){
-            if(n != 0){
-                answer[count++] = n; 
+        for (int i = 1; i < progresses.length; i++) {
+            if (days[i] <= prev) {
+                count++;
+            } else {
+                answer[idx++] = count;
+                count = 1;
+                prev = days[i];
             }
         }
 
+        answer[idx++] = count;
 
-        return answer;
+        return Arrays.copyOf(answer, idx);
     }
 }
