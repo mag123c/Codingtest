@@ -233,7 +233,7 @@
 | 2 | 2025.01.24 | [최빈값 구하기](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 </details>
 
-
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2025.04.19 | [올바른 괄호](https://www.acmicpc.net/problem/3012) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
+| 2 | 2025.04.19 | [기능개발](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
