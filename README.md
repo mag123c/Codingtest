@@ -241,3 +241,4 @@
 | 4 | 2025.04.19 | [기능개발](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 | 5 | 2025.04.19 | [주식가격](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 | 6 | 2025.04.21 | [주식가격](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
+| 7 | 2025.04.22 | [프로세스](https://www.acmicpc.net/problem/21773) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
