@@ -243,3 +243,4 @@
 | 6 | 2025.04.21 | [주식가격](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 | 7 | 2025.04.22 | [프로세스](https://www.acmicpc.net/problem/21773) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 | 8 | 2025.04.22 | [더 맵게](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
+| 9 | 2025.04.23 | [K번째수](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
