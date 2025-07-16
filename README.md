@@ -233,6 +233,8 @@
 | 2 | 2025.01.24 | [최빈값 구하기](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 </details>
 
+<details>
+<summary>2025.04 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2025.04.19 | [올바른 괄호](https://www.acmicpc.net/problem/3012) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
@@ -245,3 +247,9 @@
 | 8 | 2025.04.22 | [더 맵게](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 | 9 | 2025.04.23 | [K번째수](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 | 10 | 2025.04.23 | [디스크 컨트롤러](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
+</details>
+
+
+| #  | 날짜 | 문제 | 난이도 |
+|:---:|:---:|:---:|:---:|
+| 1 | 2025.07.16 | [명령 프롬프트](https://www.acmicpc.net/problem/1032) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
