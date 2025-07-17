@@ -249,7 +249,7 @@
 | 10 | 2025.04.23 | [디스크 컨트롤러](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 </details>
 
-
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2025.07.16 | [명령 프롬프트](https://www.acmicpc.net/problem/1032) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
+| 2 | 2025.07.17 | [시리얼 번호](https://www.acmicpc.net/problem/1431) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
