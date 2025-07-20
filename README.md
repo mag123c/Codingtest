@@ -255,3 +255,4 @@
 | 2 | 2025.07.17 | [시리얼 번호](https://www.acmicpc.net/problem/1431) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/8.svg" /></div> |
 | 3 | 2025.07.18 | [부녀회장이 될테야](https://www.acmicpc.net/problem/2775) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 4 | 2025.07.18 | [Hashing](https://www.acmicpc.net/problem/5053) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
+| 5 | 2025.07.20 | [도비의 영어 공부](https://www.acmicpc.net/problem/2386) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
