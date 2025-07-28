@@ -258,3 +258,4 @@
 | 5 | 2025.07.20 | [도비의 영어 공부](https://www.acmicpc.net/problem/2386) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
 | 6 | 2025.07.21 | [BABBA](https://www.acmicpc.net/problem/9625) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
 | 7 | 2025.07.21 | [수 고르기](https://www.acmicpc.net/problem/1503) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
+| 8 | 2025.07.28 | [오르막길](https://www.acmicpc.net/problem/2846) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
