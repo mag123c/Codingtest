@@ -262,3 +262,4 @@
 | 9 | 2025.07.31 | [첫 글자를 대문자로](https://www.acmicpc.net/problem/4458) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 | 10 | 2025.07.31 | [오늘도 졌다](https://www.acmicpc.net/problem/14582) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 11 | 2025.07.31 | [찍기](https://www.acmicpc.net/problem/2438) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
+| 12 | 2025.07.31 | [주사위 게임](https://www.acmicpc.net/problem/2476) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
