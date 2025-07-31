@@ -260,3 +260,4 @@
 | 7 | 2025.07.21 | [수 고르기](https://www.acmicpc.net/problem/1503) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/11.svg" /></div> |
 | 8 | 2025.07.28 | [오르막길](https://www.acmicpc.net/problem/2846) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 9 | 2025.07.31 | [첫 글자를 대문자로](https://www.acmicpc.net/problem/4458) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
+| 10 | 2025.07.31 | [오늘도 졌다](https://www.acmicpc.net/problem/14582) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
