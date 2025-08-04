@@ -249,6 +249,8 @@
 | 10 | 2025.04.23 | [디스크 컨트롤러](null) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/0.svg" /></div> |
 </details>
 
+<details>
+<summary>2025.07 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2025.07.16 | [명령 프롬프트](https://www.acmicpc.net/problem/1032) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
@@ -263,3 +265,9 @@
 | 10 | 2025.07.31 | [오늘도 졌다](https://www.acmicpc.net/problem/14582) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/5.svg" /></div> |
 | 11 | 2025.07.31 | [찍기](https://www.acmicpc.net/problem/2438) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/4.svg" /></div> |
 | 12 | 2025.07.31 | [주사위 게임](https://www.acmicpc.net/problem/2476) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
+</details>
+
+
+| #  | 날짜 | 문제 | 난이도 |
+|:---:|:---:|:---:|:---:|
+| 1 | 2025.08.04 | [달빛 여우](https://www.acmicpc.net/problem/16118) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/15.svg" /></div> |
