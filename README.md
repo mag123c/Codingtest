@@ -271,3 +271,4 @@
 |:---:|:---:|:---:|:---:|
 | 1 | 2025.08.04 | [달빛 여우](https://www.acmicpc.net/problem/16118) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/15.svg" /></div> |
 | 2 | 2025.08.05 | [냅색문제](https://www.acmicpc.net/problem/1450) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/15.svg" /></div> |
+| 3 | 2025.08.06 | [컵라면](https://www.acmicpc.net/problem/1781) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
