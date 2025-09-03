@@ -267,8 +267,16 @@
 | 12 | 2025.07.31 | [주사위 게임](https://www.acmicpc.net/problem/2476) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/3.svg" /></div> |
 </details>
 
+<details>
+<summary>2025.08 풀이 목록</summary>
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2025.08.04 | [달빛 여우](https://www.acmicpc.net/problem/16118) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/15.svg" /></div> |
 | 2 | 2025.08.05 | [냅색문제](https://www.acmicpc.net/problem/1450) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/15.svg" /></div> |
 | 3 | 2025.08.06 | [컵라면](https://www.acmicpc.net/problem/1781) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
+</details>
+
+
+| #  | 날짜 | 문제 | 난이도 |
+|:---:|:---:|:---:|:---:|
+| 1 | 2025.09.03 | [A+B](https://www.acmicpc.net/problem/1000) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
