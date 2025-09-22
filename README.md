@@ -276,7 +276,7 @@
 | 3 | 2025.08.06 | [컵라면](https://www.acmicpc.net/problem/1781) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/14.svg" /></div> |
 </details>
 
-
 | #  | 날짜 | 문제 | 난이도 |
 |:---:|:---:|:---:|:---:|
 | 1 | 2025.09.03 | [A+B](https://www.acmicpc.net/problem/1000) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/1.svg" /></div> |
+| 2 | 2025.09.22 | [수들의 합](https://www.acmicpc.net/problem/1789) | <div align="center"><img src="https://github.com/mag123c/Codingtest/blob/main/icon/6.svg" /></div> |
